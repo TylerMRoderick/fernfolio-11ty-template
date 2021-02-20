@@ -1,0 +1,16 @@
+:root {
+  /* Colors */
+  --color-primary: #007559;
+  --color-secondary: #006994;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f7f7f7;
+  --color-text: #222222;
+  
+  /* Typography */
+  --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --font-family-heading: var(--font-family-base);
+
+  /* Sizes */
+  --site-width: 900px;
+  --header-height: 60px;
+}

@@ -1,0 +1,19 @@
+.site-header {
+	display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--header-height);
+  padding: 0 30px;
+}
+
+.site-header__items {
+	display: flex;
+  align-items: center;
+  margin: 0;
+  list-style: none;
+}
+
+.site-header__item {
+	margin: 0 10px;
+}
+

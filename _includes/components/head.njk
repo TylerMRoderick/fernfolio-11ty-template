@@ -6,7 +6,11 @@
   <meta name="description" content="{{ metaDescription or renderData.metaDescription or metadata.description }}">
   <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   {% set css %}
-    {% include "assets/css/inline.css" %}
+    {% include "assets/css/normalize.css" %}
+    {% include "assets/css/sakura.css" %}
+    {% include "assets/css/variables.css" %}
+    {% include "assets/css/utilites.css" %}
+    {% include "assets/css/site-header.css" %}
   {% endset %}
   <style>{{ css | cssmin | safe }}</style>
   {% set js %}
