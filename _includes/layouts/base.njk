@@ -4,19 +4,15 @@
 	{% include "components/head.njk" %}
 
 	<body>
+		{% include "components/site-header.njk" %}
 
-		<header>
-			<em>
-				<a href="{{ '/' | url }}">{{ metadata.title }}</a>
-			</em>
-			{% include "components/nav.njk" %}
-		</header>
-
-		<main>
+		<main class="page-container">
 			{{ layoutContent | safe }}
 		</main>
 
-		{% include "components/footer.njk" %}
+		{% if page.url != '/' %}
+			{% include "components/footer.njk" %}
+		{% endif %}
 
 	</body>
 
