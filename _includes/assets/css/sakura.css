@@ -72,12 +72,13 @@ hr {
 
 a {
   text-decoration: none;
-  color: var(--color-primary); }
-  a:hover {
-    color: var(--color-secondary);
-    border-bottom: 2px solid var(--color-text); }
-  a:visited {
-    color: #004232; }
+  color: var(--color-primary); 
+}
+  
+a:hover {
+  color: var(--color-secondary);
+  border-bottom: 2px solid var(--color-text); 
+}
 
 ul {
   padding-left: 1.4em;
@@ -96,7 +97,7 @@ blockquote {
   padding-right: 0.8em;
   border-left: 5px solid var(--color-primary);
   margin-bottom: 2.5rem;
-  background-color: var(--color-bg-alt); }
+  background-color: var(--color-bg-secondary); }
 
 blockquote p {
   margin-bottom: 0; }
@@ -109,7 +110,7 @@ img, video {
 
 /* Pre and Code */
 pre {
-  background-color: var(--color-bg-alt);
+  background-color: var(--color-bg-secondary);
   display: block;
   padding: 1em;
   overflow-x: auto;
@@ -119,7 +120,7 @@ pre {
 code {
   font-size: 0.9em;
   padding: 0 0.5em;
-  background-color: var(--color-bg-alt);
+  background-color: var(--color-bg-secondary);
   white-space: pre-wrap; }
 
 pre > code {
@@ -135,7 +136,7 @@ table {
 
 td, th {
   padding: 0.5em;
-  border-bottom: 1px solid var(--color-bg-alt); }
+  border-bottom: 1px solid var(--color-bg-secondary); }
 
 /* Buttons, forms and input */
 input, textarea {
@@ -172,8 +173,8 @@ textarea, select, input {
   padding: 6px 10px;
   /* The 6px vertically centers text on FF, ignored by Webkit */
   margin-bottom: 10px;
-  background-color: var(--color-bg-alt);
-  border: 1px solid var(--color-bg-alt);
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-bg-secondary);
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box; }
