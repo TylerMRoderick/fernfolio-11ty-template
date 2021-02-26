@@ -1,16 +1,21 @@
 :root {
-  /* Colors */
-  --color-primary: #007559;
-  --color-secondary: #006994;
+  /* Brand Colors */
+  --color-primary: #222222;
+  --color-secondary: #457b9d;
+
+  /* Background Colors */
   --color-bg: #ffffff;
-  --color-bg-alt: #f7f7f7;
+  --color-bg-secondary: #f7f7f7;
+  --color-bg-accent: #a8dadc;
+
+  /* Text and Border Colors */
   --color-text: #222222;
-  
+  --color-border: #ff0000;
+
   /* Typography */
   --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   --font-family-heading: var(--font-family-base);
 
   /* Sizes */
   --site-width: 900px;
-  --header-height: 60px;
 }
