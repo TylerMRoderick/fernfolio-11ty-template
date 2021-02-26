@@ -1,9 +1,9 @@
 .site-header {
-	display: flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  height: var(--header-height);
-  padding: 0 30px;
+  padding: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .site-header__items {
