@@ -5,12 +5,13 @@ import Page from "/admin/preview-templates/page.js";
 CMS.registerPreviewTemplate("blog", Post);
 CMS.registerPreviewTemplate("pages", Page);
 
+// Register any CSS file on the home page as a preview style
 CMS.registerPreviewStyle("/_includes/assets/css/normalize.css");
-CMS.registerPreviewStyle("/_includes/assets/css/sakura.css");
+CMS.registerPreviewStyle("/_includes/assets/css/base-styles.css");
 CMS.registerPreviewStyle("/_includes/assets/css/variablesr.css");
 CMS.registerPreviewStyle("/_includes/assets/css/utilites.css");
 CMS.registerPreviewStyle("/_includes/assets/css/site-header.css");
-// Register any CSS file on the home page as a preview style
+
 fetch("/")
   .then(response => response.text())
   .then(html => {
