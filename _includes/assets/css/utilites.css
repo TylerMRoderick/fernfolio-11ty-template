@@ -8,3 +8,9 @@
 .shadow {
   box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,.05);
 }
+
+.gradient-text {
+  background: linear-gradient(130deg,#ff7a18,#af002d 41.07%,#319197 76.05%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

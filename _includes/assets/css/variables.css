@@ -18,4 +18,7 @@
 
   /* Sizes */
   --site-width: 900px;
+
+  /* Other */
+  --border-radius: 12px;
 }
