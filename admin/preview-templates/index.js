@@ -7,14 +7,8 @@ CMS.registerPreviewTemplate("pages", Page);
 
 // Register any CSS file on the home page as a preview style
 CMS.registerPreviewStyle("/_includes/assets/css/normalize.css");
+CMS.registerPreviewStyle("/_includes/assets/css/variables.css");
 CMS.registerPreviewStyle("/_includes/assets/css/base-styles.css");
-CMS.registerPreviewStyle("/_includes/assets/css/variablesr.css");
-CMS.registerPreviewStyle("/_includes/assets/css/utilites.css");
-CMS.registerPreviewStyle("/_includes/assets/css/site-header.css");
-CMS.registerPreviewStyle("/_includes/assets/css/site-footer.css");
-CMS.registerPreviewStyle("/_includes/assets/css/home-page.css");
-CMS.registerPreviewStyle("/_includes/assets/css/blog.css");
-CMS.registerPreviewStyle("/_includes/assets/css/contact.css");
 
 fetch("/")
   .then(response => response.text())
