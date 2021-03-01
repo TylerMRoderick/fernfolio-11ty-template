@@ -1,7 +1,7 @@
 :root {
   /* Brand Colors */
   --color-primary: #222222;
-  --color-secondary: #457b9d;
+  --color-secondary: #206088;
 
   /* Background Colors */
   --color-bg: #ffffff;
@@ -10,7 +10,7 @@
 
   /* Text and Border Colors */
   --color-text: #222222;
-  --color-border: #ff0000;
+  --color-border: rgba(0, 0, 0, 0.06);
 
   /* Typography */
   --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;

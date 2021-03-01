@@ -1,13 +1,13 @@
 <header class="site-header">
-  <em class="site-header__logo">
-    <a href="{{ '/' | url }}">{{ metadata.title }}</a>
-  </em>
+  <span class="site-header__logo">
+    <a class="site-header__link" href="{{ '/' | url }}">{{ metadata.title }}</a>
+  </span>
   <nav class="site-header__nav">
     {% set navPages = collections.all | eleventyNavigation %}
     <ul class="site-header__items">
     {%- for entry in navPages %}
       <li class="site-header__item">
-        <a href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</a>
+        <a class="site-header__link" href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</a>
       </li>
     {%- endfor %}
     </ul>
