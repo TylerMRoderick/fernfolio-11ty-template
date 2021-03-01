@@ -6,9 +6,11 @@
     {% set navPages = collections.all | eleventyNavigation %}
     <ul class="site-header__items">
     {%- for entry in navPages %}
-      <li class="site-header__item">
-        <a class="site-header__link" href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</a>
-      </li>
+      {% if entry.url != '/' %}
+        <li class="site-header__item">
+          <a class="site-header__link" href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</a>
+        </li>
+      {% endif %}
     {%- endfor %}
     </ul>
   </nav>
