@@ -14,3 +14,15 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background: var(--color-secondary);
+  font-size: 14px;
+}
+
+.btn:hover, .btn:focus {
+  filter: brightness(90%);
+}

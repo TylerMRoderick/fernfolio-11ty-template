@@ -14,6 +14,7 @@ CMS.registerPreviewStyle("/_includes/assets/css/site-header.css");
 CMS.registerPreviewStyle("/_includes/assets/css/site-footer.css");
 CMS.registerPreviewStyle("/_includes/assets/css/home-page.css");
 CMS.registerPreviewStyle("/_includes/assets/css/blog.css");
+CMS.registerPreviewStyle("/_includes/assets/css/contact.css");
 
 fetch("/")
   .then(response => response.text())
