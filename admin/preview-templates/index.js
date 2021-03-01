@@ -11,6 +11,8 @@ CMS.registerPreviewStyle("/_includes/assets/css/base-styles.css");
 CMS.registerPreviewStyle("/_includes/assets/css/variablesr.css");
 CMS.registerPreviewStyle("/_includes/assets/css/utilites.css");
 CMS.registerPreviewStyle("/_includes/assets/css/site-header.css");
+CMS.registerPreviewStyle("/_includes/assets/css/site-footer.css");
+CMS.registerPreviewStyle("/_includes/assets/css/home-page.css");
 
 fetch("/")
   .then(response => response.text())
