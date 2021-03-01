@@ -1,0 +1,26 @@
+.article-card {
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.article-card:last-child {
+  border-bottom: none;
+}
+
+.tag {
+  margin: 0 4px;
+  padding: 6px 8px;
+  background-color: var(--color-bg-secondary);
+  border-radius: 5px;
+  white-space: nowrap;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.tag:hover {
+  border: none;
+}
+
+.tag:first-child {
+  margin-left: 0;
+}
