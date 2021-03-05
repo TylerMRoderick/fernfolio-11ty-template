@@ -18,7 +18,7 @@
 .btn {
   padding: 10px 15px;
   border: none;
-  border-radius: 5px;
+  border-radius:var(--border-radius-sm);
   background: var(--color-secondary);
   font-size: 14px;
 }

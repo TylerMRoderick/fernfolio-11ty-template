@@ -23,7 +23,7 @@
   margin: 0 4px;
   padding: 6px 8px;
   background-color: var(--color-bg-secondary);
-  border-radius: 5px;
+  border-radius: var(--border-radius-sm);
   white-space: nowrap;
   font-size: 13px;
   font-weight: 500;
