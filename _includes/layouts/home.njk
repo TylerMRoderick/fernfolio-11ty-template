@@ -5,14 +5,15 @@ section: home
 <div class="home-page">
 	<div class="home-page__bg-square"></div>
 
-  <h4>{{ home.title }}</h4>
-  {# <div class="hero">
+  <div class="hero">
     <div class="hero__col">
-      <h1 class="hero__title gradient-text">{{ title }}</h1>
-      <h2>{{ subtitle }}</h2>
+      <h1 class="hero__title gradient-text">{{ home.title }} test</h1>
+      {% if home.subtitle %}
+        <h2>{{ home.subtitle }}</h2>
+      {% endif %}
     </div>
     <div class="hero__col">
-      <img class="hero__image" src="{% if image %}{{ image }}{% else %}https://source.unsplash.com/random/600x600{% endif %}">
+      <img class="hero__image" src="{% if home.image %}{{ home.image }}{% else %}https://source.unsplash.com/random/600x600{% endif %}">
     </div>
-  </div> #}
+  </div>
 </div>
