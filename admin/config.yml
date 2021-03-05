@@ -30,6 +30,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
+      - { label: "Image", name: "image", widget: "image", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Permalink", name: "permalink", widget: "string" }
       - label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/
