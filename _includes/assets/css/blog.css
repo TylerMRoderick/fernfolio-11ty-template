@@ -7,6 +7,18 @@
   border-bottom: none;
 }
 
+.tag-list--no-wrap {
+  display: flex;
+  align-items: center;
+  padding: 40px 0 30px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.tag-list__title {
+  margin: 0;
+  margin-right: 10px;
+}
+
 .tag {
   margin: 0 4px;
   padding: 6px 8px;
