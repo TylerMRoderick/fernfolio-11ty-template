@@ -48,6 +48,6 @@ collections:
     files:
       - label: "Home Page"
         name: "home"
-        file: "_data/home.yml"
+        file: "_data/home.json"
         fields:
           - {label: Title, name: title, widget: string}
