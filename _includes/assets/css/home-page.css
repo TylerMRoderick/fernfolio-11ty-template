@@ -55,6 +55,7 @@
 }
 
 .hero__image {
+  margin-bottom: 0;
   border-radius: var(--border-radius);
 }
 
