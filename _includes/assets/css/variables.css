@@ -10,7 +10,11 @@
 
   /* Text and Border Colors */
   --color-text: #222222;
+  --color-text-alt: #ffffff;
   --color-border: rgba(0, 0, 0, 0.06);
+
+  /* Status Colors */
+  --color-danger: #e03e3e;
 
   /* Typography */
   --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;

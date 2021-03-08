@@ -19,10 +19,25 @@
   padding: 10px 15px;
   border: none;
   border-radius:var(--border-radius-sm);
-  background: var(--color-secondary);
+  background-color: var(--color-secondary);
+  color: var(--color-text-alt);
   font-size: 14px;
+  white-space: nowrap;
 }
 
 .btn:hover, .btn:focus {
+  border: none;
+  filter: brightness(90%);
+}
+
+.btn--danger {
+  background-color: var(--color-danger);
+  color: var(--color-text-alt);
+}
+
+.btn--danger:hover, .btn--danger:focus {
+  border: none;
+  background-color: var(--color-danger);
+  color: var(--color-text-alt);
   filter: brightness(90%);
 }
