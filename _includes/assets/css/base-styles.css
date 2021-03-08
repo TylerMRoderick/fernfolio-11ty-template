@@ -9,6 +9,10 @@ html {
   font-family: var(--font-family-base); }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
   font-size: 1.8rem;
   line-height: 1.618;
   color: var(--color-text);
@@ -29,6 +33,10 @@ main {
   body {
     font-size: 1.35rem; 
   } 
+}
+
+footer {
+  margin-top: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
