@@ -16,8 +16,8 @@ renderData:
 ---
 <div class="page-container">
   <div class="tag-list tag-list--no-wrap">
-    <h2 class="tag-list__title">Tagged:</h2>
-    <span class="tag">{{ tag }}</span>
+    <h2 class="tag-list__title">Articles Tagged: "{{ tag | capitalize }}"</h2>
+    <a class="btn btn--danger" href="/blog">Remove Tag</a>
   </div>
 
   {% set postslist = collections[tag] %}

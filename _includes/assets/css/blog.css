@@ -9,14 +9,30 @@
 
 .tag-list--no-wrap {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding: 40px 0 30px;
   border-bottom: 1px solid var(--color-border);
 }
 
+@media (min-width: 1024px) {
+  .tag-list--no-wrap {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
 .tag-list__title {
-  margin: 0;
-  margin-right: 10px;
+  width: 100%;
+  margin-top: 0;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1024px) {
+  .tag-list__title {
+    margin-bottom: 0;
+  }
 }
 
 .tag {
@@ -24,6 +40,7 @@
   padding: 6px 8px;
   background-color: var(--color-bg-secondary);
   border-radius: var(--border-radius-sm);
+  color: var(--color-secondary);
   white-space: nowrap;
   font-size: 13px;
   font-weight: 500;
