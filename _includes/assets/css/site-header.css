@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 15px;
-  border-bottom: 1px solid var(--color-border);
+  border-top: 3px solid var(--color-secondary);
 }
 
 @media (min-width: 1024px) {
@@ -48,7 +48,7 @@
 
 .site-header__item {
 	margin: 0 20px;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 15px;
 }
 
