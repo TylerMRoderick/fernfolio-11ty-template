@@ -16,7 +16,8 @@ section: home
       <img 
         class="hero__image shadow" 
         src="{% if home.image %}{{ home.image }}{% else %}https://source.unsplash.com/random/600x600{% endif %}"
-        alt="{{ home.image_alt }}">
+        alt="{{ home.image_alt }}"
+        loading="lazy">
     </div>
   </div>
 </div>
