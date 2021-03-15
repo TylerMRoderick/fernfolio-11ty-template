@@ -76,7 +76,7 @@ small, sub, sup {
   font-size: 75%; }
 
 hr {
-  border-color: var(--color-primary); }
+  border-color: var(--color-border); }
 
 a {
   text-decoration: none;
@@ -107,8 +107,18 @@ blockquote {
   margin-bottom: 2.5rem;
   background-color: var(--color-bg-secondary); }
 
+blockquote h1, 
+blockquote h2,
+blockquote h3,
+blockquote h4,
+blockquote h5,
+blockquote h6 {
+  margin: 0.4em 0;
+}
+
 blockquote p {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 img, video {
   height: auto;

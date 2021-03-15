@@ -6,21 +6,25 @@ eleventyNavigation:
   order: 4
   key: Work
 ---
-This is where you can describe your skills and any projects that you have worked on.
+This is where you can describe your skills and talk about projects you've worked on.
 
-> ## Experience:
+***
+## 👩‍💻 Experience:
 
-##### Tesla (2019 - Current)
+#### Tesla 
+**Senior Software Engineer** _(2019 - Current)_
 
 * Collaborated with Elon Musk on 80,000 unique projects
 * Invented the Cyber Truck
 
-##### Microsoft (2014- 2019)
+#### Microsoft
+**Software Engineer** _(2014 - 2019)_
+* Maintained legacy Internet Explorer for 5 long years
+***
 
-* Maintained Internet Explorer for 5 long years
+## 📚 Education:
 
-> ## Education:
-
-##### Harvard (2014 - 2015)
-
+#### Harvard
+**PhD Astronomy** _(2014 - 2015)_
 * Graduated top of my class when I was only 12 years old
+* Won Nobel Prize
