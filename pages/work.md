@@ -19,6 +19,10 @@ This is where you can describe your skills and any projects that you have worked
 
 * Maintained Internet Explorer for 5 long years
 
+
+
+\---
+
 ## Education:
 
 ##### Harvard (2014 - 2015)
