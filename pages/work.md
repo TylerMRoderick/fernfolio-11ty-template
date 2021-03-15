@@ -8,7 +8,7 @@ eleventyNavigation:
 ---
 This is where you can describe your skills and any projects that you have worked on.
 
-## Experience:
+> ## Experience:
 
 ##### Tesla (2019 - Current)
 
@@ -19,11 +19,7 @@ This is where you can describe your skills and any projects that you have worked
 
 * Maintained Internet Explorer for 5 long years
 
-
-
-
-
-## Education:
+> ## Education:
 
 ##### Harvard (2014 - 2015)
 
