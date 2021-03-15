@@ -2,16 +2,16 @@
 section: contact
 layout: layouts/contact.njk
 title: Get in touch
-subtitle: Contact Subtitle
-image: /static/img/portrait.jpeg
 date: 2018-01-01
 permalink: /contact/index.html
 metaDescription: This is a sample meta description. If one is not present in
   your page/post's front matter, the default metadata.desciption will be used
   instead.
+subtitle: Contact Subtitle
 eleventyNavigation:
   key: Contact
-  order: 3
+  order: 4
+image: /static/img/portrait.jpeg
 ---
 The contact form on this page uses [Netlify Forms](https://www.netlify.com/docs/form-handling/) to process submissions,
 and saves them in the connected Netlify account where notifications can
