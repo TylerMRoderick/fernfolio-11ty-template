@@ -21,7 +21,7 @@ This is where you can describe your skills and any projects that you have worked
 
 
 
-\---
+
 
 ## Education:
 
