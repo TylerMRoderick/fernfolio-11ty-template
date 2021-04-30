@@ -9,7 +9,7 @@ section: home
     <div class="hero__col">
       <h1 class="hero__title gradient-text">{{ home.title }}</h1>
       {% if home.subtitle %}
-        <h2>{{ home.subtitle }}</h2>
+        <h2 class="hero__subtitle">{{ home.subtitle }}</h2>
       {% endif %}
     </div>
     <div class="hero__col">
@@ -22,4 +22,16 @@ section: home
         loading="lazy">
     </div>
   </div>
+
+  <hr>
+  <h2>Projects</h2>
+  {% set projectlist = collections.project %}
+  {% include "components/projectlist.njk" %}
+  
+
+  <hr>
+  <h2>Articles</h2>
+  {% set postslist = collections.post %}
+  {% set show_postslist_tags = false %}
+  {% include "components/postslist.njk" %}
 </div>

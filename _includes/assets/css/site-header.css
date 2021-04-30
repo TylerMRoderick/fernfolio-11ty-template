@@ -47,9 +47,16 @@
 }
 
 .site-header__item {
-	margin: 0 20px;
+	margin: 0 6px;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 14px;
+}
+
+@media (min-width: 1024px) {
+  .site-header__item {
+    margin: 0 20px;
+    font-size: 15px;
+  }
 }
 
 .site-header__link {
