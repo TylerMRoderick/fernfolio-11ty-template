@@ -7,8 +7,6 @@ eleventyNavigation:
   key: Work
 ---
 This is where you can describe your skills and talk about projects you've worked on.
-
-***
 ## 👩‍💻 Experience:
 
 #### Tesla 
