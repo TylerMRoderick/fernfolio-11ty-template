@@ -8,5 +8,4 @@ subtitle: Blog Subtitle
 eleventyNavigation:
   key: Blog
   order: 2
-image: /static/img/portrait.jpeg
 ---
