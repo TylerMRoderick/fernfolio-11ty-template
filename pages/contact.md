@@ -10,9 +10,10 @@ metaDescription: This is a sample meta description. If one is not present in
 subtitle: Contact Subtitle
 eleventyNavigation:
   key: Contact
-  order: 4
+  order: 5
 image: /static/img/portrait.jpeg
 ---
+
 The contact form on this page uses [Netlify Forms](https://www.netlify.com/docs/form-handling/) to process submissions,
 and saves them in the connected Netlify account where notifications can
 optionally be configured. Each submission is passed through a spam filter and

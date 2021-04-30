@@ -7,6 +7,7 @@ metaDescription: A sample Projects page
 subtitle: Projects Subtitle
 eleventyNavigation:
   key: Projects
-  order: 5
+  order: 4
 ---
+
 This is the page where all projects will live.
