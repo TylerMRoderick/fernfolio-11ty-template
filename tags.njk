@@ -16,11 +16,12 @@ renderData:
 ---
 <div class="page-container">
   <div class="tag-list tag-list--no-wrap">
-    <h2 class="tag-list__title">Articles Tagged: "{{ tag | capitalize }}"</h2>
+    <h3 class="tag-list__title">Articles Tagged: "{{ tag | capitalize }}"</h3>
     <a class="btn btn--danger" href="/blog">Remove Tag</a>
   </div>
 
   {% set postslist = collections[tag] %}
+  {% set show_postslist_tags = true %}
   {% include "components/postslist.njk" %}
 
   <nav>

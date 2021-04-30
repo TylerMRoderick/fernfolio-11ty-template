@@ -1,14 +1,13 @@
 .article-card {
-  padding-bottom: 14px;
-  border-bottom: 1px solid var(--color-border);
-}
-
-.article-card:last-child {
-  border-bottom: none;
+  margin-top: 35px;
 }
 
 .article-card__title {
   color: var(--color-text);
+}
+
+.article-card__summary {
+  margin-bottom: 15px;
 }
 
 .tag-list--no-wrap {
@@ -16,7 +15,7 @@
   flex-wrap: wrap;
   align-items: center;
   padding: 40px 0 30px;
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 2px solid var(--color-border);
 }
 
 @media (min-width: 1024px) {
