@@ -17,11 +17,12 @@
   --color-danger: #e03e3e;
 
   /* Typography */
-  --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   --font-family-heading: var(--font-family-base);
 
   /* Sizes */
-  --site-width: 750px;
+  --site-width: 850px;
 
   /* Other */
   --border-radius: 12px;
