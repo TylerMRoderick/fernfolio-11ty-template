@@ -5,6 +5,9 @@
         <h4>
           <a class="project-card__title" href="{{ post.url | url }}">
             {% if post.data.title %}
+              <span class="project-card__emoji">{{ post.data.emoji }}</span>
+            {% endif %}
+            {% if post.data.title %}
               {{ post.data.title }}
             {% else %}
               Untitled

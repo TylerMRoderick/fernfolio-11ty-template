@@ -33,3 +33,7 @@
   color: var(--color-text-alt);
   filter: brightness(90%);
 }
+
+.project-card__emoji {
+  margin-right: 8px;
+}
