@@ -1,6 +1,6 @@
 {
   "title": "Hello, my name is Julia",
   "image": "/static/img/portrait-sofia.jpeg",
-  "subtitle": "I'm a frontend developer based in Atlanta, GA who loves learning new things.",
+  "subtitle": "The super simple portfolio template built with Eleventy and Netlify CMS",
   "image_alt": "Portrait of Julia"
 }
