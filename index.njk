@@ -13,8 +13,8 @@ section: home
       {% endif %}
     </div>
     <div class="hero__col">
-      <img 
-        class="hero__image shadow" 
+      <img
+        class="hero__image shadow"
         src="{% if home.image %}{{ home.image }}{% else %}https://source.unsplash.com/random/600x600{% endif %}"
         alt="{{ home.image_alt }}"
         width="1000px"
@@ -27,11 +27,12 @@ section: home
   <h2>Projects</h2>
   {% set projectlist = collections.project %}
   {% include "components/projectlist.njk" %}
-  
+
 
   <hr>
   <h2>Articles</h2>
   {% set postslist = collections.post %}
   {% set show_postslist_tags = false %}
+  {% set limit = 3 %}
   {% include "components/postslist.njk" %}
 </div>
