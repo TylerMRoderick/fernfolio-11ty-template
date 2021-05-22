@@ -3,7 +3,7 @@
 # Fernfolio
 The super simple portfolio template built with [Eleventy](https://www.11ty.io/) and [Netlify CMS](https://www.netlifycms.org/)
 
-### <pre>🖥  [Demo](https://eleventy-netlify-boilerplate.netlify.app/)</pre>
+### <pre>🖥  [Demo](https://jovial-noyce-d41ffc.netlify.app/)</pre>
 
 ## 🤔 What is this?
 An [Eleventy](https://www.11ty.io/) theme designed to simplify the process of deploying a beautiful portfolio and blog. Launch your site in minutes!
@@ -25,7 +25,7 @@ Based on the [eleventy-netlify-boilerplate](https://github.com/danurbanowicz/ele
 
 ## 🚀 Quick Start
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/danurbanowicz/eleventy-netlify-boilerplate&stack=cms)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://https://github.com/TylerMRoderick/fernfolio-11ty-template&stack=cms)
 
 ### 1. Click the "Deploy to Netlify" button above
 This will clone this repo to your github account and will deploy a copy of the demo website to your Netlify
