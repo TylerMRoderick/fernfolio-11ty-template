@@ -1,49 +1,37 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bbf28a84-4bdb-407b-a2fa-32628d27fa3d/deploy-status)](https://app.netlify.com/sites/eleventy-netlify-boilerplate/deploys)
 
-# Eleventy Netlify Boilerplate
+# Fernfolio
+The super simple portfolio template built with [Eleventy](https://www.11ty.io/) and [Netlify CMS](https://www.netlifycms.org/)
 
-## [Demo Site](https://eleventy-netlify-boilerplate.netlify.app/)
+### <pre>🖥  [Demo](https://eleventy-netlify-boilerplate.netlify.app/)</pre>
 
-## What is it?
+## 🤔 What is this?
+An [Eleventy](https://www.11ty.io/) theme designed to simplify the process of deploying a beautiful portfolio and blog. Launch your site in minutes!
 
-A simple template for building a fast, pre-generated HTML website using the [Eleventy](https://www.11ty.io/) static site generator. With [Netlify CMS](https://www.netlifycms.org/) baked-in, ready to deploy to [Netlify](https://www.netlify.com) in a couple of clicks.
+Based on the [eleventy-netlify-boilerplate](https://github.com/danurbanowicz/eleventy-netlify-boilerplate), but modified to perfectly fit the needs of a modern technical porfolio.
 
-Use it as a starter for your own JAMstack projects, or as an easy way to get started building websites with Eleventy.
-
-Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) repo (see there for additional info on Eleventy usage).
-
-🔥 **This project is featured on Netlify's official [template showcase](https://templates.netlify.com/template/eleventy-netlify-boilerplate/)** 🔥
-
-## Features
-
-* NEW: Added maintenance-free post author archives
-* Uses the official [Eleventy Navigation](https://www.11ty.dev/docs/plugins/navigation/) plugin to build menus
-* Sample pages and a blog with tag support
-* Netlify CMS with editor previews (thanks [@biilmann](https://github.com/biilmann)!)
-* Includes a working contact form
-* CSS 2kb minified, inlined for fastest page render
-* Optional pipeline for minified inline JS
-* Pre-builds and minifies your HTML too
-* Uses Markdown files for content
-* Uses Nunjucks (or Liquid) templates for layout
+## ✨ Features
+* Beautiful website designed for getting interviews
+* Built in support for [Netlify CMS](https://www.netlifycms.org/) with editor previews
+* Customizable blog and project pages with tag support
+* Working contact form powered by [Netlify Forms](https://www.netlify.com/products/forms/)
+* Super fast page render and high lighthouse scores
+* Uses Markdown for content files and Nunjucks for layouts
 * 100% Javascript framework free
-* Continuous Deployment workflow via Netlify
+* Continuous Deployment workflow via [Netlify](https://www.netlify.com/)
+* Base styles powered by [Sakura](https://github.com/oxalorg/sakura) classless css framework
+* Vanilla css for custom styles (keep it simple)
 
-## Want to try it out now?
+
+## 🚀 Quick Start
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/danurbanowicz/eleventy-netlify-boilerplate&stack=cms)
 
-Clicking the button above will deploy a copy of the demo website to your Netlify
+### 1. Click the "Deploy to Netlify" button above
+This will clone this repo to your github account and will deploy a copy of the demo website to your Netlify
 account (you can create an account during this process if you don't have one)
-and everything needed for running the CMS:
 
-* A new repository in your GitHub account with the code
-* Full Continuous Deployment to Netlify's global CDN network
-* Control users and access with Netlify Identity
-* Manage content with Netlify CMS
-* Process form data with Netlify Forms
-
-### Setup authentication
+### 2. Setup authentication
 
 After deploying this project, Netlify Identity will add you as a CMS user and
 will email you an invite. It is not necessary to accept this invite if you wish
@@ -58,9 +46,23 @@ will need to add an OAuth provider in your Netlify app settings under
 Once you've added an OAuth provider, navigate to `/admin` on your site, select your provider from the
 list, and you should then be logged into your CMS. Cool huh?
 
-Now you're all set, and you can start editing content!
+Now you're all set, and you can start editing content! Any changes to your new repo will auto-deploy a new version to netflify
 
-## Gotchas
+
+## 💻 Development Scripts
+
+**`npm start`**
+
+> Run 11ty with hot reload at localhost:8080
+
+**`npm run build`**
+
+> Generate minified production build
+
+Use this as the "Publish command" if needed by hosting such as Netlify.
+
+
+## 🎩 Common issues
 
 If you change the repo that was created at deploy time from public to private, you'll need to regenerate your token,
 as the token generated using the deploy to Netlify button can only access public repositories. To
@@ -70,56 +72,6 @@ see a text link to "Generate access token in GitHub".
 
 If you need any help with setting up Netlify CMS, you can reach out to the Netlify team in the [Netlify CMS Gitter](https://gitter.im/netlify/netlifycms).
 
-## Local development
-
-### 1. Clone this repository:
-
-```
-git clone https://github.com/danurbanowicz/eleventy-netlify-boilerplate.git my-blog-name
-```
-
-
-### 2. Navigate to the directory
-
-```
-cd my-blog-name
-```
-
-Specifically have a look at `.eleventy.js` to see if you want to configure any Eleventy options differently.
-
-### 3. Install dependencies locally
-
-```
-npm install @11ty/eleventy
-```
-
-### 4. Edit _data/metadata.json
-
-This file contains your site title and author details, and can be used to store any other commonly used site data.
-
-### 5. Run Eleventy (builds the site)
-
-```
-npx @11ty/eleventy
-```
-
-Or build automatically when a template changes:
-```
-npx @11ty/eleventy --watch
-```
-
-Or build and host locally for local development:
-```
-npx @11ty/eleventy --serve
-```
-
-Or in debug mode:
-```
-DEBUG=* npx @11ty/eleventy
-```
-
 ## Bug reports, feature requests, etc
 
-This is an ongoing project and I welcome contributions and suggestions! Feel free to submit a PR.
-
-If you need any help with setting up Netlify CMS, you can reach out to the Netlify team in the [Netlify CMS Gitter](https://gitter.im/netlify/netlifycms).
+This is an ongoing project and I welcome contributions and suggestions! Feel free to submit a PR or issue.
