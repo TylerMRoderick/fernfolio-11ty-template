@@ -13,15 +13,21 @@
   }
 }
 
-.site-header__logo {
+.site-header__logo-container {
   margin: 0 auto;
   font-weight: 700;
 }
 
 @media (min-width: 1024px) {
-  .site-header__logo {
+  .site-header__logo-container {
     margin: 0;
   }
+}
+
+.site-header__logo {
+  width: 25px;
+  height: 25px;
+  margin: 0 10px 0 0;
 }
 
 .site-header__nav {
@@ -60,6 +66,8 @@
 }
 
 .site-header__link {
+  display: flex;
+  align-items: center;
   color: var(--color-text);
 }
 

@@ -1,6 +1,15 @@
 <header class="site-header">
-  <span class="site-header__logo">
-    <a class="site-header__link" href="{{ '/' | url }}">{{ metadata.title }}</a>
+  <span class="site-header__logo-container">
+    <a class="site-header__link" href="{{ '/' | url }}">
+      <img
+        class="site-header__logo"
+        src="/static/img/logo.png"
+        alt="Fernfolio Logo"
+        width="25px"
+        height="25px"
+        loading="lazy">
+      {{ metadata.title }}
+    </a>
   </span>
   <nav class="site-header__nav">
     {% set navPages = collections.all | eleventyNavigation %}
