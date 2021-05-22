@@ -1,16 +1,14 @@
 {
-  "name": "julia-11ty-portfolio",
+  "name": "fernfolio-11ty-template",
   "version": "1.0.0",
   "description": "The super simple portfolio template built with Eleventy and Netlify CMS",
   "scripts": {
-    "build": "npx eleventy",
-    "watch": "npx eleventy --watch",
-    "serve": "npx eleventy --serve",
-    "debug": "DEBUG=* npx eleventy"
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tylerMRoderick/julia-11ty-portfolio"
+    "url": "https://github.com/tylerMRoderick/fernfolio-11ty-template"
   },
   "author": {
     "name": "Tyler M. Roderick",
@@ -19,9 +17,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tylerMRoderick/julia-11ty-portfolio/issues"
+    "url": "https://github.com/tylerMRoderick/fernfolio-11ty-template/issues"
   },
-  "homepage": "https://github.com/tylerMRoderick/julia-11ty-portfolio",
+  "homepage": "https://github.com/tylerMRoderick/fernfolio-11ty-template",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
     "luxon": "^1.25.0",
