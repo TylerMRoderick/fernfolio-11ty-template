@@ -11,7 +11,6 @@ subtitle: Contact Subtitle
 eleventyNavigation:
   key: Contact
   order: 5
-image: /static/img/portrait.jpeg
 ---
 
 The contact form on this page uses [Netlify Forms](https://www.netlify.com/docs/form-handling/) to process submissions,
