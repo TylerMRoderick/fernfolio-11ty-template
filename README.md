@@ -1,11 +1,11 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/bbf28a84-4bdb-407b-a2fa-32628d27fa3d/deploy-status)](https://app.netlify.com/sites/https://jovial-noyce-d41ffc.netlify.app/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bbf28a84-4bdb-407b-a2fa-32628d27fa3d/deploy-status)](https://app.netlify.com/sites/https://fernfolio.netlify.app/deploys)
 
 # Fernfolio
 The super simple portfolio template built with [Eleventy](https://www.11ty.io/) and [Netlify CMS](https://www.netlifycms.org/)
 
 <img width="1280" alt="fernfolio screenshot" src="https://raw.githubusercontent.com/TylerMRoderick/fernfolio-11ty-template/master/fernfolio-preview.png">
 
-### <pre>🖥  [Demo](https://jovial-noyce-d41ffc.netlify.app/)</pre>
+### <pre>🖥  [Demo](https://fernfolio.netlify.app/)</pre>
 
 ## 🤔 What is this?
 An [Eleventy](https://www.11ty.io/) theme designed to simplify the process of deploying a beautiful portfolio and blog. Launch your site in minutes!
