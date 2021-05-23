@@ -1,6 +1,6 @@
 ---
 title: This is the second example post
-summary: Why contemplating our mortality can be a powerful catalyst for change
+summary: Bring to the table win-win survival strategies to ensure proactive domination.
 date: 2020-01-01
 author: John Appleseed
 tags:
