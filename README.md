@@ -13,7 +13,6 @@ An [Eleventy](https://www.11ty.io/) theme designed to simplify the process of de
 Based on the [eleventy-netlify-boilerplate](https://github.com/danurbanowicz/eleventy-netlify-boilerplate), but modified to perfectly fit the needs of a modern technical porfolio.
 
 ## ✨ Features
-* Beautiful website designed for getting interviews
 * Built in support for [Netlify CMS](https://www.netlifycms.org/) with editor previews
 * Customizable blog and project pages with tag support
 * Working contact form powered by [Netlify Forms](https://www.netlify.com/products/forms/)
