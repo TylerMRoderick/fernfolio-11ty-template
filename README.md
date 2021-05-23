@@ -3,6 +3,8 @@
 # Fernfolio
 The super simple portfolio template built with [Eleventy](https://www.11ty.io/) and [Netlify CMS](https://www.netlifycms.org/)
 
+<img width="1280" alt="fernfolio screenshot" src="https://raw.githubusercontent.com/TylerMRoderick/fernfolio-11ty-template/master/fernfolio-preview.png">
+
 ### <pre>🖥  [Demo](https://jovial-noyce-d41ffc.netlify.app/)</pre>
 
 ## 🤔 What is this?
