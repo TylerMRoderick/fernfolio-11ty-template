@@ -35,19 +35,12 @@ account (you can create an account during this process if you don't have one)
 ### 2. Setup authentication
 
 After deploying this project, Netlify Identity will add you as a CMS user and
-will email you an invite. It is not necessary to accept this invite if you wish
-to use an
-[OAuth provider](https://www.netlify.com/docs/identity/#external-provider-login)
-(e.g. Github) to manage authentication for your CMS.
-It is recommended to use this method of authentication as it removes the need
-for an email & password to log in to the CMS and is generally more secure. You
-will need to add an OAuth provider in your Netlify app settings under
-"Settings" > "Identity" > "External providers".
+will email you an invite. Hit the "Accept the invite" link and this should take you to the deployed site. From there, you can add your password
 
-Once you've added an OAuth provider, navigate to `/admin` on your site, select your provider from the
-list, and you should then be logged into your CMS. Cool huh?
+### 3. Edit some content
+Now that you are added as a CMS user, add `/admin` to the end of your site url, and log in using your new credentials. You should now see the content editor interface. Now you can start editing content! Any changes to your new repo will auto-deploy a new version to netflify. Cool huh?
 
-Now you're all set, and you can start editing content! Any changes to your new repo will auto-deploy a new version to netflify
+### 4. Setup local environment
 
 
 ## 💻 Development Scripts
