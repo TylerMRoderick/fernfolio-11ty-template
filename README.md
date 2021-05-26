@@ -26,7 +26,7 @@ Based on the [eleventy-netlify-boilerplate](https://github.com/danurbanowicz/ele
 
 ## 🚀 Quick Start
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://https://github.com/TylerMRoderick/fernfolio-11ty-template&stack=cms)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/TylerMRoderick/fernfolio-11ty-template&stack=cms)
 
 ### 1. Click the "Deploy to Netlify" button above
 This will clone this repo to your github account and will deploy a copy of the demo website to your Netlify
