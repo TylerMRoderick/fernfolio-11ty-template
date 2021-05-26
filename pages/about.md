@@ -1,7 +1,7 @@
 ---
 title: About Me
 metaDescription: The super simple portfolio template built with Eleventy and Netlify CMS
-subtitle: I'm Fernfolio and I simplify the process of creating a portfolio
+subtitle: ""
 date: 2017-01-01T00:00:00.000Z
 permalink: /about/index.html
 eleventyNavigation:
