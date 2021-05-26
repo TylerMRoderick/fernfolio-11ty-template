@@ -9,6 +9,12 @@ eleventyNavigation:
   order: 1
 ---
 #### Why Create This?
-My girlfriend wanted a portfolio and I offered to help build it. After some research, I knew [Eleventy](https://www.11ty.dev/) was the right tool for the job. It is simple, powerful, written in javascript, and framework free. I found a few good starter projects, but was overall unhappy with the current theme options. That led me to develop Fernfolio. The goal was not to create a technical masterpiece, but to create a beautiful portfolio with minimal overhead/complexity. Something that just works.
+I wanted to develop a portfolio that was simple, fast, accessible, and can be modified without opening up a code editor.
+
+First, I needed a static site generator. This led me to [Eleventy](https://www.11ty.dev/). This project is great because it is is simple, powerful, written in javascript, and framework free.
+
+Next, I wanted auto deployments and a git-powered CMS. [Netlify](https://www.netlify.com/) and their suite of tools seemed perfect.
+
+I found a few good starter projects using these technologies, but was overall unhappy with the current options. That led me to develop Fernfolio. The goal was not to create a technical masterpiece, but to create a beautiful portfolio with minimal overhead/complexity. Something that just works.
 
 This project is open source so that hopefully someone else can use this as a template (or reference) in building their own site. Technical details can be found on the [Github repo](https://github.com/TylerMRoderick/fernfolio-11ty-template) and some customization instructions can be found [here](/posts/theme-customizations/).
