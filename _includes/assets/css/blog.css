@@ -10,6 +10,11 @@
   margin-bottom: 15px;
 }
 
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .tag-list--no-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -39,7 +44,7 @@
 }
 
 .tag {
-  margin: 0 4px;
+  margin: 10px 10px 0 0;
   padding: 6px 8px;
   background-color: var(--color-bg-secondary);
   border-radius: var(--border-radius-sm);
