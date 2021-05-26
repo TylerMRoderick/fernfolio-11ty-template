@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/bbf28a84-4bdb-407b-a2fa-32628d27fa3d/deploy-status)](https://app.netlify.com/sites/https://fernfolio.netlify.app/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5702ba89-7242-490e-b04d-e4a691faced5/deploy-status)](https://app.netlify.com/sites/fernfolio/deploys)
 
 # Fernfolio
 The super simple portfolio template built with [Eleventy](https://www.11ty.io/) and [Netlify CMS](https://www.netlifycms.org/)
@@ -35,13 +35,19 @@ account (you can create an account during this process if you don't have one)
 ### 2. Setup authentication
 
 After deploying this project, Netlify Identity will add you as a CMS user and
-will email you an invite. Hit the "Accept the invite" link and this should take you to the deployed site. From there, you can add your password
+will email you an invite. Hit the "Accept the invite" link and this should take you to the deployed site. From there, you can add your password to finish user setup.
 
 ### 3. Edit some content
 Now that you are added as a CMS user, add `/admin` to the end of your site url, and log in using your new credentials. You should now see the content editor interface. Now you can start editing content! Any changes to your new repo will auto-deploy a new version to netflify. Cool huh?
 
 ### 4. Setup local environment
-
+- Clone the repo locally `git clone https://github.com/TylerMRoderick/fernfolio-11ty-template.git`
+- Navigate to root folder `cd your-site`
+- Install the goods `npm install`
+- Run it `npm start`
+- You should now be able to see everything running on localhost:8080
+- Add some changes (view [theme customizations](https://fernfolio.netlify.app/posts/theme-customizations/) for some options) 
+- Push your changes to github and an auto-deploy should be triggered
 
 ## 💻 Development Scripts
 
@@ -54,6 +60,8 @@ Now that you are added as a CMS user, add `/admin` to the end of your site url, 
 > Generate minified production build
 
 Use this as the "Publish command" if needed by hosting such as Netlify.
+
+Checkout the Eleventy [Command Line Usage docs](https://www.11ty.dev/docs/usage/) for more options 
 
 
 ## 🎩 Common issues
