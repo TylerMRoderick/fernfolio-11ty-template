@@ -1,7 +1,7 @@
 ---
 title: About Me
-metaDescription: The super simple portfolio template built with Eleventy and Netlify CMS
 subtitle: ""
+metaDescription: This page is all about me
 date: 2017-01-01T00:00:00.000Z
 permalink: /about/index.html
 eleventyNavigation:
