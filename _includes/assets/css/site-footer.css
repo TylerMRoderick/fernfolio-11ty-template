@@ -1,0 +1,14 @@
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border-top: 1px solid var(--color-border);
+}
+
+@media (min-width: 1024px) {
+  .site-footer {
+    padding: 15px 30px;
+  }
+}

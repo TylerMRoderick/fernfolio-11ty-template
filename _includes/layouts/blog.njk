@@ -1,0 +1,14 @@
+---
+layout: layouts/base.njk
+section: blog
+permalink: /blog/index.html
+---
+<div class="page-container">
+  <h1>{{title}}</h1>
+  {{ layoutContent | safe }}
+	<hr>
+
+  {% set postslist = collections.post %}
+  {% set show_postslist_tags = true %}
+  {% include "components/postslist.njk" %}
+</div>

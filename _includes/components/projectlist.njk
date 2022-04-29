@@ -1,0 +1,35 @@
+<section>
+  <div class="project-grid">
+    {% for post in projectlist | reverse %}
+      <div class="project-card" {% if post.url == url %} data-current="current item"{% endif %}>
+        <h4>
+          <a class="project-card__title" href="{{ post.url | url }}">
+            {% if post.data.title %}
+              <span class="project-card__emoji">{{ post.data.emoji }}</span>
+            {% endif %}
+            {% if post.data.title %}
+              {{ post.data.title }}
+            {% else %}
+              Untitled
+            {% endif %}
+          </a>
+        </h4>
+        {% if post.data.summary %}
+          <p>
+            {{ post.data.summary }}
+          </p>
+        {% endif %}
+        {% if post.data.tags %}
+          <p class="tag-list">
+            {% for tag in post.data.tags %}
+              {%- if tag != "project" -%}
+                {% set tagUrl %}/project-tags/{{ tag }}/{% endset %}
+              <a class="project-card__tag tag" href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+              {%- endif -%}
+            {% endfor %}
+          </p>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</section>

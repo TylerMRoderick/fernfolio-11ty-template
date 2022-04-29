@@ -1,0 +1,30 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - nav
+    - post
+    - posts
+permalink: /tags/{{ tag }}/
+layout: layouts/base.njk
+renderData:
+  title: "Tagged “{{ tag }}”"
+  metaDescription: "All posts from the Blog tagged with “{{ tag }}”"
+---
+<div class="page-container">
+  <div class="tag-list tag-list--no-wrap">
+    <h3 class="tag-list__title">Articles Tagged: "{{ tag | capitalize }}"</h3>
+    <a class="btn btn--danger" href="/blog">Remove Tag</a>
+  </div>
+
+  {% set postslist = collections[tag] %}
+  {% set show_postslist_tags = true %}
+  {% include "components/postslist.njk" %}
+
+  <nav>
+    <a href="{{ '/blog/' | url }}">← View All Articles</a>
+  </nav>
+</div>

@@ -1,0 +1,15 @@
+---
+layout: layouts/base.njk
+section: projects
+---
+<div class="page-container">
+  <h1>{{title}}</h1>
+  {% if subtitle %}
+    <p>{{ subtitle }}</p>
+  {% endif %}
+  <hr>
+  {{ layoutContent | safe }}
+
+  {% set projectlist = collections.project %}
+  {% include "components/projectlist.njk" %}
+</div>

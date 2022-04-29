@@ -1,0 +1,35 @@
+<head>
+  <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://identity.netlify.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ renderData.title or title or metadata.title }}</title>
+  <meta name="description" content="{{ metaDescription or renderData.metaDescription or summary or metadata.description }}">
+  <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  {% set css %}
+    {% include "assets/css/normalize.css" %}
+    {% include "assets/css/variables.css" %}
+    {% include "assets/css/google-fonts.css" %}
+    {% include "assets/css/base-styles.css" %}
+    {% include "assets/css/utilites.css" %}
+    {% include "assets/css/site-header.css" %}
+    {% include "assets/css/site-footer.css" %}
+    {% include "assets/css/blog.css" %}
+    {% include "assets/css/projects.css" %}
+
+    {% if page.url == '/' %}
+      {% include "assets/css/home-page.css" %}
+    {% endif %}
+
+    {% if page.url == '/contact/' %}
+      {% include "assets/css/contact.css" %}
+    {% endif %}
+  {% endset %}
+  <style>{{ css | cssmin | safe }}</style>
+  {% set js %}
+    {% include "assets/js/inline.js" %}
+  {% endset %}
+  <script>{{ js | jsmin | safe }}</script>
+</head>
