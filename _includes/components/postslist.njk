@@ -16,7 +16,7 @@
             {{ post.data.summary }}
           </p>
         {% endif %}
-        {% if post.data.tags and show_postslist_tags %}
+        {% if post.data.tags and show_tags %}
           <p class="tag-list">
             {% for tag in post.data.tags %}
               {%- if tag != "post" -%}
