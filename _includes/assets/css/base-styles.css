@@ -3,6 +3,7 @@
  * Minimal css theme.
  * Project: https://github.com/oxalorg/sakura/
  */
+
 /* Body */
 html {
   font-size: 62.5%;
@@ -69,7 +70,7 @@ h6 {
   font-size: 1em; }
 
 p {
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 2.5rem; }
 
 small, sub, sup {
@@ -90,15 +91,15 @@ a:hover {
 
 ul {
   padding-left: 1.4em;
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 2.5rem; }
 
 li {
   margin-bottom: 0.4em; }
 
 blockquote {
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: 0;
+  margin-right: 0;
   padding-left: 1em;
   padding-top: 0.8em;
   padding-bottom: 0.8em;
@@ -123,7 +124,7 @@ blockquote p {
 img, video {
   height: auto;
   max-width: 100%;
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 2.5rem; }
 
 /* Pre and Code */
@@ -132,7 +133,7 @@ pre {
   display: block;
   padding: 1em;
   overflow-x: auto;
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 2.5rem; }
 
 code {
@@ -159,6 +160,7 @@ td, th {
 /* Buttons, forms and input */
 input, textarea {
   border: 1px solid var(--color-text); }
+
   input:focus, textarea:focus {
     border: 1px solid var(--color-primary); }
 
@@ -179,15 +181,18 @@ textarea {
   border-radius: 1px;
   cursor: pointer;
   box-sizing: border-box; }
+
   .btn[disabled], button[disabled], input[type="submit"][disabled], input[type="reset"][disabled], input[type="button"][disabled] {
     cursor: default;
     opacity: .5; }
+
   .btn:focus:enabled, .btn:hover:enabled, button:focus:enabled, button:hover:enabled, input[type="submit"]:focus:enabled, input[type="submit"]:hover:enabled, input[type="reset"]:focus:enabled, input[type="reset"]:hover:enabled, input[type="button"]:focus:enabled, input[type="button"]:hover:enabled {
     outline: 0; }
 
 textarea, select, input {
   color: var(--color-text);
   padding: 6px 10px;
+
   /* The 6px vertically centers text on FF, ignored by Webkit */
   margin-bottom: 10px;
   background-color: var(--color-bg-secondary);
@@ -195,6 +200,7 @@ textarea, select, input {
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box; }
+
   textarea:focus, select:focus, input:focus {
     border: 1px solid var(--color-primary);
     outline: 0; }
