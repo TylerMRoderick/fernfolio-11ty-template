@@ -1,8 +1,8 @@
-const { DateTime } = require("luxon");
-const CleanCSS = require("clean-css");
-const UglifyJS = require("uglify-es");
-const htmlmin = require("html-minifier");
-const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const { DateTime } = require('luxon');
+const CleanCSS = require('clean-css');
+const UglifyJS = require('uglify-es');
+const htmlmin = require('html-minifier');
+const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 
 module.exports = function (eleventyConfig) {
   // Eleventy Navigation https://www.11ty.dev/docs/plugins/navigation/
@@ -21,8 +21,8 @@ module.exports = function (eleventyConfig) {
   // Add support for maintenance-free post authors
   // Adds an authors collection using the author key in our post frontmatter
   // Thanks to @pdehaan: https://github.com/pdehaan
-  eleventyConfig.addCollection("authors", (collection) => {
-    const blogs = collection.getFilteredByGlob("posts/*.md");
+  eleventyConfig.addCollection('authors', (collection) => {
+    const blogs = collection.getFilteredByGlob('posts/*.md');
     return blogs.reduce((coll, post) => {
       const author = post.data.author;
       if (!author) {
@@ -37,33 +37,33 @@ module.exports = function (eleventyConfig) {
   });
 
   // Date formatting (human readable)
-  eleventyConfig.addFilter("readableDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj).toFormat("DD");
+  eleventyConfig.addFilter('readableDate', (dateObj) => {
+    return DateTime.fromJSDate(dateObj).toFormat('DD');
   });
 
   // Date formatting (machine readable)
-  eleventyConfig.addFilter("machineDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd");
+  eleventyConfig.addFilter('machineDate', (dateObj) => {
+    return DateTime.fromJSDate(dateObj).toFormat('yyyy-MM-dd');
   });
 
   // Minify CSS
-  eleventyConfig.addFilter("cssmin", function (code) {
+  eleventyConfig.addFilter('cssmin', function (code) {
     return new CleanCSS({}).minify(code).styles;
   });
 
   // Minify JS
-  eleventyConfig.addFilter("jsmin", function (code) {
+  eleventyConfig.addFilter('jsmin', function (code) {
     let minified = UglifyJS.minify(code);
     if (minified.error) {
-      console.log("UglifyJS error: ", minified.error);
+      console.log('UglifyJS error: ', minified.error);
       return code;
     }
     return minified.code;
   });
 
   // Minify HTML output
-  eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
-    if (outputPath && outputPath.indexOf(".html") > -1) {
+  eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
+    if (outputPath && outputPath.indexOf('.html') > -1) {
       let minified = htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
@@ -75,14 +75,14 @@ module.exports = function (eleventyConfig) {
   });
 
   // Don't process folders with static assets e.g. images
-  eleventyConfig.addPassthroughCopy("favicon.ico");
-  eleventyConfig.addPassthroughCopy("static/img");
-  eleventyConfig.addPassthroughCopy("admin");
-  eleventyConfig.addPassthroughCopy("_includes/assets/");
+  eleventyConfig.addPassthroughCopy('favicon.ico');
+  eleventyConfig.addPassthroughCopy('static/img');
+  eleventyConfig.addPassthroughCopy('admin');
+  eleventyConfig.addPassthroughCopy('_includes/assets/');
 
   /* Markdown Plugins */
-  let markdownIt = require("markdown-it");
-  let markdownItAnchor = require("markdown-it-anchor");
+  let markdownIt = require('markdown-it');
+  let markdownItAnchor = require('markdown-it-anchor');
   let options = {
     html: true,
     breaks: true,
@@ -93,27 +93,27 @@ module.exports = function (eleventyConfig) {
   };
 
   eleventyConfig.setLibrary(
-    "md",
+    'md',
     markdownIt(options).use(markdownItAnchor, opts)
   );
 
   return {
-    templateFormats: ["md", "njk", "html", "liquid"],
+    templateFormats: ['md', 'njk', 'html', 'liquid'],
 
     // If your site lives in a different subdirectory, change this.
     // Leading or trailing slashes are all normalized away, so don’t worry about it.
     // If you don’t have a subdirectory, use "" or "/" (they do the same thing)
     // This is only used for URLs (it does not affect your file structure)
-    pathPrefix: "/",
+    pathPrefix: '/',
 
-    markdownTemplateEngine: "liquid",
-    htmlTemplateEngine: "njk",
-    dataTemplateEngine: "njk",
+    markdownTemplateEngine: 'liquid',
+    htmlTemplateEngine: 'njk',
+    dataTemplateEngine: 'njk',
     dir: {
-      input: ".",
-      includes: "_includes",
-      data: "_data",
-      output: "_site",
+      input: '.',
+      includes: '_includes',
+      data: '_data',
+      output: '_site',
     },
   };
 };

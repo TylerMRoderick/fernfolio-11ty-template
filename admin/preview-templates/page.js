@@ -1,4 +1,4 @@
-import htm from "https://unpkg.com/htm?module";
+import htm from 'https://unpkg.com/htm?module';
 
 const html = htm.bind(h);
 
@@ -9,10 +9,10 @@ const Page = createClass({
 
     return html`
       <main>
-        <h1>${entry.getIn(["data", "title"], null)}</h1>
-        <h2>${entry.getIn(["data", "subtitle"], null)}</h2>
+        <h1>${entry.getIn(['data', 'title'], null)}</h1>
+        <h2>${entry.getIn(['data', 'subtitle'], null)}</h2>
 
-        ${this.props.widgetFor("body")}
+        ${this.props.widgetFor('body')}
       </main>
     `;
   },
