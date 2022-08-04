@@ -22,7 +22,7 @@ module.exports = function (eleventyConfig) {
   // Adds an authors collection using the author key in our post frontmatter
   // Thanks to @pdehaan: https://github.com/pdehaan
   eleventyConfig.addCollection('authors', (collection) => {
-    const blogs = collection.getFilteredByGlob('posts/*.md');
+    const blogs = collection.getFilteredByGlob('./src/posts/*.md');
     return blogs.reduce((coll, post) => {
       const author = post.data.author;
       if (!author) {
@@ -75,10 +75,10 @@ module.exports = function (eleventyConfig) {
   });
 
   // Don't process folders with static assets e.g. images
-  eleventyConfig.addPassthroughCopy('favicon.ico');
-  eleventyConfig.addPassthroughCopy('static/img');
-  eleventyConfig.addPassthroughCopy('admin');
-  eleventyConfig.addPassthroughCopy('_includes/assets/');
+  eleventyConfig.addPassthroughCopy('src/favicon.ico');
+  eleventyConfig.addPassthroughCopy('src/static/img');
+  eleventyConfig.addPassthroughCopy('src/admin');
+  eleventyConfig.addPassthroughCopy('src/_includes/assets/');
 
   /* Markdown Plugins */
   let markdownIt = require('markdown-it');
@@ -110,7 +110,7 @@ module.exports = function (eleventyConfig) {
     htmlTemplateEngine: 'njk',
     dataTemplateEngine: 'njk',
     dir: {
-      input: '.',
+      input: 'src',
       includes: '_includes',
       data: '_data',
       output: '_site',
