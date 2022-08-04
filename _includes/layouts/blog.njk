@@ -8,7 +8,8 @@ permalink: /blog/index.html
   {{ layoutContent | safe }}
 	<hr>
 
-  {% set postslist = collections.post %}
+  {% set postslist = pagination.items %}
   {% set show_tags = true %}
   {% include "components/postslist.njk" %}
+  {% include 'components/pagination.njk' %}
 </div>

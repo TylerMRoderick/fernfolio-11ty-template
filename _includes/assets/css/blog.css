@@ -1,3 +1,4 @@
+/* Article card */
 .article-card {
   margin-top: 35px;
 }
@@ -10,6 +11,7 @@
   margin-bottom: 15px;
 }
 
+/* Tags */
 .tag-list {
   display: flex;
   flex-wrap: wrap;
@@ -60,4 +62,22 @@
 
 .tag:first-child {
   margin-left: 0;
+}
+
+/* Pagination */
+.pagination__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  list-style: none;
+  gap: 25px;
+}
+
+.pagination__link {
+  color: var(--color-text);
+}
+
+.pagination__link[aria-current] {
+  color: var(--color-secondary);
 }

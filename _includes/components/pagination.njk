@@ -1,0 +1,26 @@
+<nav class="pagination" aria-label="pagination">
+  <ol class="pagination__list">
+  {% if pagination.href.previous %}
+    <li class="pagination__item">
+      <a class="pagination__link" href="{{pagination.href.previous}}">Previous</a>
+    </li>
+  {% endif %}
+  {%- for pageEntry in pagination.pages %}
+    {% set is_active = (page.url == pagination.hrefs[ loop.index0 ]) %}
+    <li class="pagination__item">
+      <a
+        class="pagination__link"
+        href="{{ pagination.hrefs[ loop.index0 ] }}"
+        {% if is_active %}aria-current="page"{% endif %}
+      >
+        {{ loop.index }}
+      </a>
+    </li>
+  {%- endfor %}
+  {% if pagination.href.next %}
+    <li class="pagination__item">
+      <a class="pagination__link" href="{{pagination.href.next}}">Next</a>
+    </li>
+  {% endif %}
+  </ol>
+</nav>

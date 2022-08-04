@@ -2,7 +2,10 @@
 layout: layouts/blog.njk
 title: Articles
 date: 2017-01-01
-permalink: /blog/index.html
+pagination:
+  data: collections.post
+  size: 20
+permalink: "blog{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber }}{% endif %}/index.html"
 metaDescription: A sample Blog page listing various posts and authors.
 subtitle: A collection of technical blog posts and random thoughts
 eleventyNavigation:
