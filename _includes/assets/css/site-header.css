@@ -43,7 +43,7 @@
 }
 
 .site-header__items {
-	display: flex;
+  display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
@@ -53,7 +53,7 @@
 }
 
 .site-header__item {
-	margin: 0 6px;
+  margin: 0 6px;
   font-weight: 500;
   font-size: 14px;
 }
@@ -74,4 +74,3 @@
 .site-header__link:hover {
   border-bottom: none;
 }
-

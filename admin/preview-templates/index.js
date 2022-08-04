@@ -11,11 +11,11 @@ CMS.registerPreviewStyle("/_includes/assets/css/variables.css");
 CMS.registerPreviewStyle("/_includes/assets/css/base-styles.css");
 
 fetch("/")
-  .then(response => response.text())
-  .then(html => {
+  .then((response) => response.text())
+  .then((html) => {
     const f = document.createElement("html");
     f.innerHTML = html;
-    Array.from(f.getElementsByTagName("link")).forEach(tag => {
+    Array.from(f.getElementsByTagName("link")).forEach((tag) => {
       if (tag.rel == "stylesheet" && !tag.media) {
         CMS.registerPreviewStyle(tag.href);
       }
