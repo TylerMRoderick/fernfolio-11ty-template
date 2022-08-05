@@ -71,6 +71,11 @@
   color: var(--color-text);
 }
 
+.site-header__link[aria-current] {
+  color: var(--color-secondary);
+  font-weight: bold;
+}
+
 .site-header__link:hover {
   border-bottom: none;
 }
