@@ -1,7 +1,14 @@
+// Utilities
 const { DateTime } = require('luxon');
+let markdownIt = require('markdown-it');
+let markdownItAnchor = require('markdown-it-anchor');
+
+// Minification
 const CleanCSS = require('clean-css');
 const UglifyJS = require('uglify-es');
 const htmlmin = require('html-minifier');
+
+// Eleventy Plugins
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 
 module.exports = function (eleventyConfig) {
@@ -74,22 +81,16 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/admin');
   eleventyConfig.addPassthroughCopy('src/_includes/assets/');
 
-  /* Markdown Plugins */
-  let markdownIt = require('markdown-it');
-  let markdownItAnchor = require('markdown-it-anchor');
-  let options = {
+  // Customize Markdown library and settings
+  let markdownLibrary = markdownIt({
     html: true,
     breaks: true,
-    linkify: true,
-  };
-  let opts = {
+    linkify: true
+  }).use(markdownItAnchor,  {
     permalink: false,
-  };
+  });
 
-  eleventyConfig.setLibrary(
-    'md',
-    markdownIt(options).use(markdownItAnchor, opts)
-  );
+  eleventyConfig.setLibrary('md', markdownLibrary);
 
   return {
     templateFormats: ['md', 'njk', 'html', 'liquid'],
