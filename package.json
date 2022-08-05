@@ -4,9 +4,7 @@
   "description": "The super simple portfolio template built with Eleventy and Netlify CMS",
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
-    "build": "npx @11ty/eleventy",
-    "lint": "npx eslint .",
-    "lint-fix": "npx eslint --fix ."
+    "build": "npx @11ty/eleventy"
   },
   "repository": {
     "type": "git",
@@ -24,16 +22,9 @@
   "homepage": "https://github.com/tylerMRoderick/fernfolio-11ty-template",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
-    "eslint": "^8.21.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.26.0",
     "luxon": "^1.25.0",
     "markdown-it": "^10.0.0",
-    "markdown-it-anchor": "^5.3.0",
-    "prettier": "2.7.1",
-    "stylelint": "^14.9.1",
-    "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-standard": "^26.0.0"
+    "markdown-it-anchor": "^5.3.0"
   },
   "dependencies": {
     "@11ty/eleventy-navigation": "^0.1.6",
