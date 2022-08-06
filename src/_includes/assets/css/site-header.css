@@ -1,15 +1,21 @@
 .site-header {
+  border-top: 3px solid var(--color-secondary);
+}
+
+.site-header__container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  max-width: var(--site-width);
+  margin: 0 auto;
   padding: 15px;
-  border-top: 3px solid var(--color-secondary);
+  padding-left: 0;
 }
 
 @media (min-width: 1024px) {
-  .site-header {
-    padding: 15px 30px;
+  .site-header__container {
+    padding: 15px 40px 0;
   }
 }
 
@@ -25,9 +31,14 @@
 }
 
 .site-header__logo {
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   margin: 0 10px 0 0;
+  transition: opacity 0.2s ease;
+}
+
+.site-header__logo:hover {
+  opacity: 0.8;
 }
 
 .site-header__nav {
