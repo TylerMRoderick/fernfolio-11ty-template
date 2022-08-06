@@ -5,6 +5,7 @@ section: home
 <div class="home-page">
 	<div class="home-page__bg-square"></div>
 
+  {# Hero #}
   <div class="hero">
     <div class="hero__col">
       <h1 class="hero__title gradient-text">{{ home.title }}</h1>
@@ -23,16 +24,18 @@ section: home
     </div>
   </div>
 
+  {# Projects #}
   <hr>
   <h2>Projects</h2>
   {% set projectlist = collections.project %}
   {% include "components/projectlist.njk" %}
 
+  {# Articles #}
   <hr>
   <h2>Articles</h2>
   {% from "macros/articlelist.njk" import articlelist %}
   {{ articlelist(
-    items = collections.post | reverse,
+    articles = collections.post | reverse,
     show_tags = false,
     limit = 3
   ) }}

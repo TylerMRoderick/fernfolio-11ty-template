@@ -15,9 +15,11 @@ renderData:
     <a class="btn btn--danger" href="/blog">Remove Tag</a>
   </div>
 
-  {% set postslist = collections[tag] %}
-  {% set show_tags = true %}
-  {% include "components/postslist.njk" %}
+  {% from "macros/articlelist.njk" import articlelist %}
+  {{ articlelist(
+    articles = collections[tag] | reverse,
+    show_tags = true
+  ) }}
 
   <nav>
     <a href="{{ '/blog/' | url }}">← View All Articles</a>

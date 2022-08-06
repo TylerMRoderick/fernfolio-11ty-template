@@ -1,26 +1,26 @@
-{% macro articlelist(items, show_tags = true, limit) %}
+{% macro articlelist(articles, show_tags = true, limit) %}
   <section>
-  {% for post in items | reverse %}
+  {% for article in articles %}
     {% if limit === undefined or loop.index0 < limit %}
-      <article class="article-card" {% if post.url == url %} data-current="current item"{% endif %}>
+      <article class="article-card" {% if article.url == url %} data-current="current item"{% endif %}>
         <h5>
-          <a class="article-card__title" href="{{ post.url | url }}">
-            {% if post.data.title %}
-              {{ post.data.title }}
+          <a class="article-card__title" href="{{ article.url | url }}">
+            {% if article.data.title %}
+              {{ article.data.title }}
             {% else %}
               Untitled
             {% endif %}
           </a>
         </h5>
-        {% if post.data.summary %}
+        {% if article.data.summary %}
           <p class="article-card__summary">
-            {{ post.data.summary }}
+            {{ article.data.summary }}
           </p>
         {% endif %}
-        {% if post.data.tags and show_tags %}
+        {% if article.data.tags and show_tags %}
           <p class="tag-list">
-            {% for tag in post.data.tags %}
-              {%- if tag != "post" -%}
+            {% for tag in article.data.tags %}
+              {%- if tag != "article" -%}
                 {% set tagUrl %}/tags/{{ tag }}/{% endset %}
               <a class="tag" href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
               {%- endif -%}
