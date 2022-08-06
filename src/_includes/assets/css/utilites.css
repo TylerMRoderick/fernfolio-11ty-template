@@ -37,6 +37,7 @@
 .btn:focus {
   border: none;
   filter: brightness(90%);
+  color: var(--color-text-alt);
 }
 
 .btn--danger {
