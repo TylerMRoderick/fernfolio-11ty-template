@@ -1,5 +1,5 @@
 ---
-layout: layouts/blog.njk
+layout: blog.njk
 title: Articles
 date: 2017-01-01
 pagination:
