@@ -16,6 +16,5 @@
   <link rel="stylesheet" href="/assets/css/main.css">
 
   {# Javascript #}
-  {% set js %}{% include "assets/js/inline.js" %}{% endset %}
-  <script>{{ js | jsmin | safe }}</script>
+  <script async src="/assets/js/main.js"></script>
 </head>

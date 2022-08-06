@@ -1,3 +1,4 @@
+// Handle Netlify Identity Login
 if (window.netlifyIdentity) {
   window.netlifyIdentity.on('init', (user) => {
     if (!user) {
