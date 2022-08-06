@@ -58,9 +58,7 @@ module.exports = function (eleventyConfig) {
 
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy('src/favicon.ico');
-  eleventyConfig.addPassthroughCopy('src/static/img');
   eleventyConfig.addPassthroughCopy('src/admin');
-  eleventyConfig.addPassthroughCopy('src/_includes/assets');
   eleventyConfig.addPassthroughCopy('src/assets');
 
   // Customize Markdown library and settings
