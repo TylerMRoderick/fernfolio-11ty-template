@@ -60,7 +60,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/favicon.ico');
   eleventyConfig.addPassthroughCopy('src/static/img');
   eleventyConfig.addPassthroughCopy('src/admin');
-  eleventyConfig.addPassthroughCopy('src/_includes/assets/');
+  eleventyConfig.addPassthroughCopy('src/_includes/assets');
+  eleventyConfig.addPassthroughCopy('src/assets');
 
   // Customize Markdown library and settings
   let markdownLibrary = markdownIt({
@@ -78,6 +79,7 @@ module.exports = function (eleventyConfig) {
     markdownTemplateEngine: 'njk',
     htmlTemplateEngine: 'njk',
     dataTemplateEngine: 'njk',
+    passthroughFileCopy: true,
     dir: {
       input: 'src',
       layouts: "_layouts"
