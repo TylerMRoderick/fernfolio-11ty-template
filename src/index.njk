@@ -27,8 +27,8 @@ section: home
   {# Projects #}
   <hr>
   <h2>Projects</h2>
-  {% set projectlist = collections.project %}
-  {% include "components/projectlist.njk" %}
+  {% from "macros/projectlist.njk" import projectlist %}
+  {{ projectlist(projects = collections.project | reverse) }}
 
   {# Articles #}
   <hr>
