@@ -5,11 +5,18 @@ permalink: /blog/index.html
 ---
 <div class="page-container">
   <h1>{{title}}</h1>
+
   {{ layoutContent | safe }}
+
 	<hr>
 
-  {% set postslist = pagination.items %}
-  {% set show_tags = true %}
-  {% include "components/postslist.njk" %}
+  {# Article List #}
+  {% from "macros/articlelist.njk" import articlelist %}
+  {{ articlelist(
+    items = pagination.items | reverse,
+    show_tags = true
+  ) }}
+
+  {# Pagination #}
   {% include 'components/pagination.njk' %}
 </div>
