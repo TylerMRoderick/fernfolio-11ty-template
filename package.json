@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "description": "The super simple portfolio template built with Eleventy and Netlify CMS",
   "scripts": {
+    "start": "cross-env npm-run-all build:sass --parallel watch:*",
+    "build": "cross-env npm-run-all build:sass build:scripts build:eleventy",
+    "watch:scripts": "esbuild \"./src/assets/js/main.js\" --target=es6 --bundle --outfile=\"./_site/assets/js/main.bundle.js\"",
+    "build:scripts": "esbuild \"./src/assets/js/main.js\" --target=es6 --bundle --minify --outfile=\"./_site/assets/js/main.bundle.js\"",
     "watch:sass": "sass --no-source-map --watch src/assets/scss:_site/assets/css/",
-    "watch:eleventy": "eleventy --serve --incremental",
-    "postbuild": "postcss _site/assets/css/*.css -u autoprefixer cssnano -r --no-map",
     "build:sass": "sass --no-source-map src/assets/scss/main.scss _site/assets/css/main.css",
+    "watch:eleventy": "eleventy --serve --incremental",
     "build:eleventy": "eleventy",
-    "start": "cross-env ELEVENTY_ENV=dev npm-run-all build:sass --parallel watch:*",
-    "build": "cross-env ELEVENTY_ENV=prod npm-run-all build:sass build:eleventy",
+    "postbuild": "postcss _site/assets/css/*.css -u autoprefixer cssnano -r --no-map",
     "clean": "rimraf './_site'"
   },
   "repository": {
@@ -31,6 +33,7 @@
     "autoprefixer": "^10.4.8",
     "cross-env": "^7.0.3",
     "cssnano": "^5.1.12",
+    "esbuild": "^0.14.53",
     "luxon": "^1.25.0",
     "markdown-it": "^10.0.0",
     "markdown-it-anchor": "^5.3.0",
@@ -43,7 +46,6 @@
   },
   "dependencies": {
     "@11ty/eleventy-navigation": "^0.1.6",
-    "html-minifier": "^4.0.0",
-    "uglify-es": "^3.3.9"
+    "html-minifier": "^4.0.0"
   }
 }

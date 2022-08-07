@@ -1,10 +1,6 @@
-// Utilities
 const { DateTime } = require('luxon');
 let markdownIt = require('markdown-it');
 let markdownItAnchor = require('markdown-it-anchor');
-
-// Minification
-const UglifyJS = require('uglify-es');
 const htmlmin = require('html-minifier');
 
 // Eleventy Plugins
@@ -29,16 +25,6 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toFormat('yyyy-MM-dd');
   });
 
-  // Minify JS
-  eleventyConfig.addFilter('jsmin', function (code) {
-    let minified = UglifyJS.minify(code);
-    if (minified.error) {
-      console.log('UglifyJS error: ', minified.error);
-      return code;
-    }
-    return minified.code;
-  });
-
   // Minify HTML output
   eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
     if (outputPath && outputPath.indexOf('.html') > -1) {
@@ -56,7 +42,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/favicon.ico');
   eleventyConfig.addPassthroughCopy('src/admin');
   eleventyConfig.addPassthroughCopy('src/assets/img');
-  eleventyConfig.addPassthroughCopy('src/assets/js');
 
   // Customize Markdown library and settings
   let markdownLibrary = markdownIt({
