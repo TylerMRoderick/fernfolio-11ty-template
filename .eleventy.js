@@ -4,7 +4,6 @@ let markdownIt = require('markdown-it');
 let markdownItAnchor = require('markdown-it-anchor');
 
 // Minification
-const CleanCSS = require('clean-css');
 const UglifyJS = require('uglify-es');
 const htmlmin = require('html-minifier');
 
@@ -12,6 +11,8 @@ const htmlmin = require('html-minifier');
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addWatchTarget("./src/assets/scss/");
+
   // Eleventy Navigation https://www.11ty.dev/docs/plugins/navigation/
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
@@ -26,11 +27,6 @@ module.exports = function (eleventyConfig) {
   // Date formatting (machine readable)
   eleventyConfig.addFilter('machineDate', (dateObj) => {
     return DateTime.fromJSDate(dateObj).toFormat('yyyy-MM-dd');
-  });
-
-  // Minify CSS
-  eleventyConfig.addFilter('cssmin', function (code) {
-    return new CleanCSS({}).minify(code).styles;
   });
 
   // Minify JS
@@ -59,7 +55,8 @@ module.exports = function (eleventyConfig) {
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy('src/favicon.ico');
   eleventyConfig.addPassthroughCopy('src/admin');
-  eleventyConfig.addPassthroughCopy('src/assets');
+  eleventyConfig.addPassthroughCopy('src/assets/img');
+  eleventyConfig.addPassthroughCopy('src/assets/js');
 
   // Customize Markdown library and settings
   let markdownLibrary = markdownIt({
