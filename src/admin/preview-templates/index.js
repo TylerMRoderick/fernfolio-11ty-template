@@ -6,9 +6,9 @@ CMS.registerPreviewTemplate('blog', Post);
 CMS.registerPreviewTemplate('pages', Page);
 
 // Register any CSS file on the home page as a preview style
-CMS.registerPreviewStyle('/_includes/assets/css/normalize.css');
-CMS.registerPreviewStyle('/_includes/assets/css/variables.css');
-CMS.registerPreviewStyle('/_includes/assets/css/base-styles.css');
+CMS.registerPreviewStyle('/assets/scss/third-party/normalize.scss');
+CMS.registerPreviewStyle('/assets/scss/global/variables.scss');
+CMS.registerPreviewStyle('/assets/scss/global/base-styles.scss');
 
 fetch('/')
   .then((response) => response.text())
