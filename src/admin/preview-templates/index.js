@@ -1,7 +1,9 @@
+import Home from '/admin/preview-templates/home.js';
 import Post from '/admin/preview-templates/post.js';
 import Page from '/admin/preview-templates/page.js';
 
-// Register the Post component as the preview for entries in the blog collection
+// Register preview templates
+CMS.registerPreviewTemplate('home', Home);
 CMS.registerPreviewTemplate('blog', Post);
 CMS.registerPreviewTemplate('pages', Page);
 
