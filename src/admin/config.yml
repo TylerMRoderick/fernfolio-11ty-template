@@ -5,13 +5,13 @@ backend:
 # Uncomment below to enable drafts
 # publish_mode: editorial_workflow
 
-media_folder: 'assets/img' # Media files will be stored in the repo under images/uploads
+media_folder: 'src/assets/img' # Media files will be stored in the repo under images/uploads
 
 collections:
   # Our blog posts
   - name: 'blog' # Used in routes, e.g., /admin/collections/blog
     label: 'Post' # Used in the UI
-    folder: 'posts' # The path to the folder where the documents are stored
+    folder: 'src/posts' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
@@ -30,7 +30,7 @@ collections:
   # Our basic pages e.g. About
   - name: 'pages'
     label: 'Page'
-    folder: 'pages'
+    folder: 'src/pages'
     create: true
     slug: '{{slug}}'
     fields:
@@ -63,7 +63,7 @@ collections:
     files:
       - label: 'Home Page'
         name: 'home'
-        file: '_data/home.json'
+        file: 'src/_data/home.json'
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Subtitle, name: subtitle, widget: string, required: false }
