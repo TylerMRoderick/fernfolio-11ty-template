@@ -1,6 +1,6 @@
 ---
 title: Images can be added to posts
-date: 2020-02-03
+date: 2020-02-03T08:00:00.000Z
 summary: Add a random image to your post using unsplash
 tags:
   - environment
