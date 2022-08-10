@@ -25,7 +25,7 @@ const Home = createClass({
                 alt="${entry.getIn(['data', 'image_alt'], null)}"
                 width="1000px"
                 height="1000px"
-                loading="lazy">
+                loading="lazy" />
             </div>
           </div>
         </div>
