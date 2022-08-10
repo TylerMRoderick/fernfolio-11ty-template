@@ -18,6 +18,15 @@ const Home = createClass({
               <h1 class="hero__title gradient-text">${entry.getIn(['data', 'title'], null)}</h1>
               <p class="hero__subtitle">${entry.getIn(['data', 'subtitle'], null)}</p>
             </div>
+            <div class="hero__col">
+              <img
+                class="hero__image shadow"
+                src="${entry.getIn(['data', 'image'], null)}"
+                alt="${entry.getIn(['data', 'image_alt'], null)}"
+                width="1000px"
+                height="1000px"
+                loading="lazy">
+            </div>
           </div>
         </div>
       </main>
