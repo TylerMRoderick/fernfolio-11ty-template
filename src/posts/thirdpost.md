@@ -1,6 +1,7 @@
 ---
-title: This is the third example post which has a slightly longer title than the others
-date: 2020-01-01
+title: This is the third example post which has a slightly longer title than the
+  others
+date: 2020-01-01T08:00:00.000Z
 summary: Organically grow the holistic world view of disruptive innovation
 tags:
   - tech
