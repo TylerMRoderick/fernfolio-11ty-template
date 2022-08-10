@@ -17,11 +17,12 @@ const Post = createClass({
               <time
                 >${format(
                   entry.getIn(['data', 'date'], new Date()),
-                  'dd MMM, yyyy'
+                  'MMMM dd, yyyy'
                 )}</time
               >
             </small>
           </p>
+          <hr>
 
           <p>${entry.getIn(['data', 'summary'], '')}</p>
 
