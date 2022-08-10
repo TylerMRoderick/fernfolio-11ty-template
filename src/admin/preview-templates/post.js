@@ -26,10 +26,10 @@ const Post = createClass({
           <p>${entry.getIn(['data', 'summary'], '')}</p>
 
           ${this.props.widgetFor('body')}
-          <p>
+          <p class="tag-list">
             ${entry
               .getIn(['data', 'tags'], [])
-              .map((tag) => html` <a href="#" rel="tag">${tag}</a> `)}
+              .map((tag) => html` <a class="tag" href="#" rel="tag">${tag}</a> `)}
           </p>
         </article>
       </main>
