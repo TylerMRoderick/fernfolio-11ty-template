@@ -10,7 +10,7 @@ section: home
     <div class="hero__col">
       <h1 class="hero__title gradient-text">{{ home.title }}</h1>
       {% if home.body %}
-        <div class="hero__body">{{ home.body }}</div>
+        <div class="hero__body">{{ home.body | markdown | safe }}</div>
       {% endif %}
     </div>
     <div class="hero__col">

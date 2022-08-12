@@ -54,6 +54,11 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.setLibrary('md', markdownLibrary);
 
+  // Add Markdown filter
+  eleventyConfig.addFilter('markdown', (str) => {
+    return markdownIt().render(str);
+  });
+
   return {
     templateFormats: ['md', 'njk', 'html'],
     markdownTemplateEngine: 'njk',
