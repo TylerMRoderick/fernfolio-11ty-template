@@ -73,9 +73,13 @@
   }
 }
 
-.hero__subtitle {
+.hero__body {
   margin-top: 0;
   margin-bottom: 1rem;
   font-size: 1.3em;
+
+  > *:first-child {
+    margin-top: 0;
+  }
 }
 

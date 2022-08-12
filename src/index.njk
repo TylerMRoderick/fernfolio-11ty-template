@@ -9,8 +9,8 @@ section: home
   <div class="hero">
     <div class="hero__col">
       <h1 class="hero__title gradient-text">{{ home.title }}</h1>
-      {% if home.subtitle %}
-        <p class="hero__subtitle">{{ home.subtitle }}</p>
+      {% if home.body %}
+        <div class="hero__body">{{ home.body }}</div>
       {% endif %}
     </div>
     <div class="hero__col">

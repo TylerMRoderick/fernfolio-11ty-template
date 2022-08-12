@@ -59,7 +59,7 @@ collections:
         file: "src/_data/home.json"
         fields:
           - { label: Title, name: title, widget: string }
-          - { label: Subtitle, name: subtitle, widget: string, required: false }
+          - { label: "Body", name: "body", widget: "markdown", required: false }
           - { label: Image, name: image, widget: image, required: false }
           - {
               label: Image Alt Text,
@@ -74,12 +74,7 @@ collections:
         file: "src/pages/about.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - {
-              label: "Subtitle",
-              name: "subtitle",
-              widget: "string",
-              required: false,
-            }
+          - { label: Subtitle, name: subtitle, widget: string, required: false }
           - { label: "Body", name: "body", widget: "markdown", required: false }
           - {
               label: "Meta Description",
@@ -124,12 +119,7 @@ collections:
         file: "src/pages/projects.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - {
-              label: "Subtitle",
-              name: "subtitle",
-              widget: "string",
-              required: false,
-            }
+          - { label: Subtitle, name: subtitle, widget: string, required: false }
           - { label: "Body", name: "body", widget: "markdown", required: false }
           - {
               label: "Meta Description",
