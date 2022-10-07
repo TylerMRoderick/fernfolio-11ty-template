@@ -1,3 +1,4 @@
+const fs = require('fs');
 const { DateTime } = require('luxon');
 let markdownIt = require('markdown-it');
 let markdownItAnchor = require('markdown-it-anchor');
@@ -57,6 +58,36 @@ module.exports = function (eleventyConfig) {
   // Add Markdown filter
   eleventyConfig.addFilter('markdown', (str) => {
     return markdownIt().render(str);
+  });
+
+  // move to head so that it does not interfere
+  // with turbolinks in development
+  eleventyConfig.setBrowserSyncConfig({
+    // show 404s in dev. Borrowed from eleventy blog starter
+    callbacks: {
+      ready: function(_, browserSync) {
+        //  This is keeps the exception from showing during the first local build
+        const generated404Exists = fs.existsSync('_site/404.html');
+        const content_404 = generated404Exists
+          ? fs.readFileSync('_site/404.html')
+          : '<h1>File Does Not Exist</h1>';
+
+        browserSync.addMiddleware('*', (_, res) => {
+          // Provides the 404 content without redirect.
+          res.write(content_404);
+          res.end();
+        });
+      }
+    },
+    // scripts in body conflict with Turbolinks
+    snippetOptions: {
+      rule: {
+        match: /<\/head>/i,
+        fn: function(snippet, match) {
+          return snippet + match;
+        }
+      }
+    }
   });
 
   return {
