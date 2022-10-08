@@ -1,14 +1,44 @@
 /* Article card */
 .article-card {
-  margin-top: 35px;
+  margin-top: 20px;
+  padding: 4px;
+  border-radius: 6px;
+
+  &:hover {
+    color: var(--color-text);
+    background-color: var(--color-bg-hover);
+    border-bottom: none;
+  }
+
+  &--tags {
+    &:hover {
+      color: red;
+      background-color: transparent;
+    }
+  }
+}
+
+.article-card__link {
+  color: var(--color-text);
+
+  &:hover {
+    color: var(--color-text);
+  }
+
+  .article-card--tags & {
+    &:hover {
+      color: var(--color-secondary);
+    }
+  }
 }
 
 .article-card__title {
-  color: var(--color-text);
+  margin: 5px 0;
 }
 
 .article-card__summary {
-  margin-bottom: 15px;
+  margin-bottom: 0;
+  color: var(--color-text-gray);
 }
 
 /* Tags */

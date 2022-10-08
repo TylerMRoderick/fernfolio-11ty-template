@@ -69,33 +69,20 @@ const Home = createClass({
           <h2>Articles</h2>
           <section>
             <article class="article-card">
-              <h5>
-                <a class="article-card__title" href="#">
-                  Placeholder Article
-                </a>
-              </h5>
-              <p class="article-card__summary">
-                This is not a real article and is only visible in the CMS.
-              </p>
-              <p class="tag-list">
-                <a class="tag" href="#" rel="tag">Politics</a>
-                <a class="tag" href="#" rel="tag">Philosophy</a>
-                <a class="tag" href="#" rel="tag">Technology</a>
-              </p>
+              <a class="article-card__link" href="#">
+                <h6 class="article-card__title">Placeholder Article</h6>
+                <p class="article-card__summary">
+                  This is not a real article and is only visible in the CMS.
+                </p>
+              </a>
             </article>
             <article class="article-card">
-              <h5>
-                <a class="article-card__title" href="#">
-                  Another Placeholder
-                </a>
-              </h5>
-              <p class="article-card__summary">
-                This is the summary for the second placeholder article.
-              </p>
-              <p class="tag-list">
-                <a class="tag" href="#" rel="tag">Sports</a>
-                <a class="tag" href="#" rel="tag">Technology</a>
-              </p>
+              <a class="article-card__link" href="#">
+                <h6 class="article-card__title">Placeholder Article</h6>
+                <p class="article-card__summary">
+                  This is not a real article and is only visible in the CMS.
+                </p>
+              </a>
             </article>
           </section>
         </div>

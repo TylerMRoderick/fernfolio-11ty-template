@@ -2,31 +2,28 @@
   <section>
   {% for article in articles %}
     {% if limit === undefined or loop.index0 < limit %}
-      <article class="article-card" {% if article.url == url %} data-current="current item"{% endif %}>
-        <h5>
-          <a class="article-card__title" href="{{ article.url | url }}">
-            {% if article.data.title %}
-              {{ article.data.title }}
-            {% else %}
-              Untitled
-            {% endif %}
-          </a>
-        </h5>
-        {% if article.data.summary %}
-          <p class="article-card__summary">
-            {{ article.data.summary }}
-          </p>
-        {% endif %}
-        {% if article.data.tags and show_tags %}
-          <p class="tag-list">
-            {% for tag in article.data.tags %}
-              {%- if tag != "article" -%}
-                {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-              <a class="tag" href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
-              {%- endif -%}
-            {% endfor %}
-          </p>
-        {% endif %}
+      <article
+        class="article-card {% if show_tags %}article-card--tags{% endif %}"
+        {% if article.url == url %} data-current="current item"{% endif %}
+      >
+        <a class="article-card__link" href="{{ article.url | url }}">
+          <h6 class="article-card__title">{{ article.data.title }}</h6>
+          {% if article.data.summary %}
+            <p class="article-card__summary">
+              {{ article.data.summary }}
+            </p>
+          {% endif %}
+          {% if article.data.tags and show_tags %}
+            <p class="tag-list">
+              {% for tag in article.data.tags %}
+                {%- if tag != "article" -%}
+                  {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+                <a class="tag" href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+                {%- endif -%}
+              {% endfor %}
+            </p>
+          {% endif %}
+        </a>
       </article>
     {% endif %}
   {% endfor %}
