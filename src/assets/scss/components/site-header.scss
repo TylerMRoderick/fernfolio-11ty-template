@@ -71,7 +71,7 @@
 
 @media (min-width: 1024px) {
   .site-header__item {
-    margin: 0 20px;
+    margin: 0 15px;
     font-size: 15px;
   }
 }
@@ -79,14 +79,18 @@
 .site-header__link {
   display: flex;
   align-items: center;
+  padding: 6px 8px;
+  border-radius: var(--border-radius-sm);
   color: var(--color-text);
 }
 
 .site-header__link[aria-current] {
+  background-color: var(--color-bg-secondary);
   color: var(--color-secondary);
-  font-weight: bold;
 }
 
 .site-header__link:hover {
   border-bottom: none;
+  background-color: var(--color-bg-secondary);
+  color: var(--color-secondary);
 }
