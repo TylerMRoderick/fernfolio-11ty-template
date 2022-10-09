@@ -14,13 +14,13 @@ section: home
       {% endif %}
     </div>
     <div class="hero__col">
-      <img
-        class="hero__image shadow"
-        src="{% if home.image %}{{ home.image }}{% else %}https://source.unsplash.com/random/600x600{% endif %}"
-        alt="{{ home.image_alt }}"
-        width="1000px"
-        height="1000px"
-      >
+      {% Image
+        home.image,
+        home.image_alt,
+        "(min-width: 1024px) 50vw, 100vw",
+        "hero__image shadow",
+        "eager"
+      %}
     </div>
   </div>
 

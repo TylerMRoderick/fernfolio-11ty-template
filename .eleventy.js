@@ -3,6 +3,7 @@ const { DateTime } = require('luxon');
 let markdownIt = require('markdown-it');
 let markdownItAnchor = require('markdown-it-anchor');
 const htmlmin = require('html-minifier');
+const imageShortcode = require('./src/_11ty/shortcodes/image-shortcode');
 
 // Eleventy Plugins
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
@@ -25,6 +26,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter('machineDate', (dateObj) => {
     return DateTime.fromJSDate(dateObj).toFormat('yyyy-MM-dd');
   });
+
+  // Nunjuck Shortcodes
+  eleventyConfig.addNunjucksAsyncShortcode('Image', imageShortcode);
 
   // Minify HTML output
   eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
