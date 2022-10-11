@@ -7,12 +7,17 @@
   &:hover {
     color: var(--color-text);
     background-color: var(--color-bg-hover);
-    border-bottom: none;
   }
 
   &--tags {
+    border-bottom: 2px solid var(--color-border);
+    border-radius: 0;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
     &:hover {
-      color: red;
       background-color: transparent;
     }
   }
