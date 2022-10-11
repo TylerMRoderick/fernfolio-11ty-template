@@ -16,7 +16,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter('machineDate', machineDateFilter);
 
   // Shortcodes
-  eleventyConfig.addNunjucksAsyncShortcode('Image', imageShortcode);
+  eleventyConfig.addNunjucksAsyncShortcode('image', imageShortcode);
 
   // Libraries
   eleventyConfig.setLibrary('md', markdownLibrary);
