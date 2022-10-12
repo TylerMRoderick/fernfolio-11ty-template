@@ -58,17 +58,17 @@
 }
 
 .hero__image {
-  margin-bottom: 0;
   border-radius: var(--border-radius);
   transition: filter 0.4s ease-out;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 0;
+  }
 }
 
 .hero__title {
-  margin-top: 0;
-}
-
-@media (min-width: 1024px) {
-  .hero__title {
+  @media (min-width: 1024px) {
+    margin-top: 0;
     font-size: 3.3em;
   }
 }
