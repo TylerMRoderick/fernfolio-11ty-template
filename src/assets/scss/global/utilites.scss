@@ -3,13 +3,13 @@
   margin-right: auto;
   margin-left: auto;
   padding: 1rem;
-}
 
-.page-container img {
-  display: flex;
-  width: 100%;
-  max-width: 700px;
-  margin: 4rem auto;
+  img {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    margin: 4rem auto;
+  }
 }
 
 .shadow {
@@ -31,13 +31,12 @@
   color: var(--color-text-alt);
   font-size: 14px;
   white-space: nowrap;
-}
 
-.btn:hover,
-.btn:focus {
-  border: none;
-  filter: brightness(90%);
-  color: var(--color-text-alt);
+  &:hover, &:focus {
+    border: none;
+    filter: brightness(90%);
+    color: var(--color-text-alt);
+  }
 }
 
 .btn--sm {

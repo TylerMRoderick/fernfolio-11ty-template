@@ -19,22 +19,18 @@ body {
   line-height: 1.618;
   color: var(--color-text);
   background-color: var(--color-bg);
+
+  @media (max-width: 684px) {
+    font-size: 1.53rem;
+  }
+
+  @media (max-width: 382px) {
+    font-size: 1.35rem;
+  }
 }
 
 main {
   padding: 13px;
-}
-
-@media (max-width: 684px) {
-  body {
-    font-size: 1.53rem;
-  }
-}
-
-@media (max-width: 382px) {
-  body {
-    font-size: 1.35rem;
-  }
 }
 
 footer {
@@ -100,11 +96,11 @@ hr {
 a {
   text-decoration: none;
   color: var(--color-secondary);
-}
 
-a:hover {
-  color: var(--color-secondary);
-  border-bottom: 2px solid var(--color-secondary);
+  &:hover {
+    color: var(--color-secondary);
+    border-bottom: 2px solid var(--color-secondary);
+  }
 }
 
 ul {
@@ -255,13 +251,11 @@ input {
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box;
-}
 
-textarea:focus,
-select:focus,
-input:focus {
-  border: 1px solid var(--color-primary);
-  outline: 0;
+  &:focus {
+    border: 1px solid var(--color-primary);
+    outline: 0;
+  }
 }
 
 input[type='checkbox']:focus {

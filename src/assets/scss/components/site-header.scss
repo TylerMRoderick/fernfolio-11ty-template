@@ -84,10 +84,8 @@
   margin: 0 6px;
   font-weight: 500;
   font-size: 14px;
-}
 
-@media (min-width: 1024px) {
-  .site-header__item {
+  @media (min-width: 1024px) {
     margin: 0 15px;
     font-size: 15px;
   }

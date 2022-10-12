@@ -3,10 +3,8 @@
   grid-template-columns: repeat(1, 1fr);
   gap: 40px;
   margin: 40px 0;
-}
 
-@media (min-width: 1024px) {
-  .project-grid {
+  @media (min-width: 1024px) {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -29,11 +27,11 @@
 .project-card__tag {
   background-color: var(--color-secondary);
   color: var(--color-text-alt);
-}
 
-.project-card__tag:hover {
-  color: var(--color-text-alt);
-  filter: brightness(90%);
+  &:hover {
+    color: var(--color-text-alt);
+    filter: brightness(90%);
+  }
 }
 
 .project-card__emoji {
