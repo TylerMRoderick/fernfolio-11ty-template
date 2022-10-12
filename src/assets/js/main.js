@@ -1,7 +1,11 @@
 const Turbolinks = require('turbolinks');
+const drawer = require('./drawer');
 
 // Initialize Turbolinks
 Turbolinks.start();
+
+// Initialize mobile nav drawer
+drawer();
 
 // Handle Netlify Identity Login
 if (window.netlifyIdentity) {

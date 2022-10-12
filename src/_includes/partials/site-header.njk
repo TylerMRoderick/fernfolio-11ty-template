@@ -5,6 +5,15 @@
         {% include 'icons/icon-fern.njk' %}
       </a>
     </span>
+    <button
+      class="site-header__mobile-nav"
+      data-drawer-trigger=""
+      aria-controls="drawer-name"
+      aria-expanded="false"
+    >
+      <span class="site-header__mobile-nav-label">Menu</span>
+      {% include 'icons/icon-hamburger.njk' %}
+    </button>
     <nav class="site-header__nav">
       {% set navPages = collections.all | eleventyNavigation %}
       <ul class="site-header__items">
