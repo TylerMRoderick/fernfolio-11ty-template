@@ -10,7 +10,7 @@ metaDescription: This is a sample meta description. If one is not present in
 subtitle: Contact Subtitle
 eleventyNavigation:
   key: Contact
-  order: 5
+  order: 4
 ---
 
 The contact form on this page uses [Netlify Forms](https://www.netlify.com/docs/form-handling/) to process submissions,

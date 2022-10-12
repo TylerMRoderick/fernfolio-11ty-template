@@ -8,5 +8,5 @@ subtitle: This is the page where all projects will live
 emoji: 💻
 eleventyNavigation:
   key: Projects
-  order: 4
+  order: 3
 ---
