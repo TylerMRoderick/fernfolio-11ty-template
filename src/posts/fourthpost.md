@@ -8,6 +8,6 @@ tags:
 ---
 The below image was added using Netlify CMS and is stored in your git repo.
 
-![Fern](/src/assets/img/fern-forest.jpeg "Fern")
+![Fern](/src/assets/img/fern-in-hand.jpeg "Fern")
 
 Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
