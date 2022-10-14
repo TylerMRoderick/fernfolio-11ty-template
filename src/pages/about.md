@@ -20,4 +20,4 @@ I found a few good starter projects using these technologies, but was overall un
 
 This project is open source so that hopefully someone else can use this as a template (or reference) in building their own site. Technical details can be found on the [Github repo](https://github.com/TylerMRoderick/fernfolio-11ty-template) and some customization instructions can be found [here](/posts/theme-customizations/).
 
-![Fern in Hand](/assets/img/fern-in-hand.jpeg "Fern in Hand")
+![Fern in Hand](/src/assets/img/fern-forest.jpeg "Fern in Hand")
