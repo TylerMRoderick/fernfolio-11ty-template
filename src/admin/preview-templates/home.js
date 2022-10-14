@@ -6,6 +6,8 @@ const html = htm.bind(h);
 const Home = createClass({
   render() {
     const entry = this.props.entry;
+    const image = entry.getIn(['data', 'image']);
+    const imageSrc = this.props.getAsset(image);
 
     return html`
       <main>
@@ -21,7 +23,7 @@ const Home = createClass({
             <div class="hero__col">
               <img
                 class="hero__image shadow"
-                src="${entry.getIn(['data', 'image'], null)}"
+                src="${imageSrc}"
                 alt="${entry.getIn(['data', 'image_alt'], null)}"
                 width="1000px"
                 height="1000px"
