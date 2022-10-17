@@ -13,6 +13,16 @@ collections:
     label: "Global Settings"
     slug: "{{slug}}"
     files:
+
+    # Site Metadata
+    - label: "Metadata"
+        name: "global"
+        file: "src/_data/metadata.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
+
+      # Global Settings
       - label: "Global Settings"
         name: "global"
         file: "src/_data/global.json"
