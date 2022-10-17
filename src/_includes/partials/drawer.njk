@@ -6,7 +6,7 @@
         Menu
       </div>
       <button class="drawer__close" data-drawer-close aria-label="Close Drawer">
-        {% include 'icons/icon-close.njk' %}
+        {{ global.close_icon | svg | safe }}
       </button>
     </div>
     <div class="drawer__content">

@@ -1,8 +1,8 @@
 <header class="site-header">
   <div class="site-header__container">
     <span class="site-header__logo-container">
-      <a class="site-header__link" href="{{ '/' | url }}" aria-label="Fernfolio logo">
-        {% include 'icons/icon-fern.njk' %}
+      <a class="site-header__logo" href="{{ '/' | url }}" aria-label="Logo">
+        {{ global.logo | svg | safe }}
       </a>
     </span>
     <button
@@ -12,7 +12,7 @@
       aria-expanded="false"
     >
       <span class="site-header__mobile-nav-label">Menu</span>
-      {% include 'icons/icon-hamburger.njk' %}
+      {{ global.menu_icon | svg | safe }}
     </button>
     <nav class="site-header__nav">
       {% set navPages = collections.all | eleventyNavigation %}

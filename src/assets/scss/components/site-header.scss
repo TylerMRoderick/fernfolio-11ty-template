@@ -22,14 +22,20 @@
 }
 
 .site-header__logo {
-  width: 35px;
-  height: 35px;
-  margin: 0 10px 0 0;
-  transition: opacity 0.2s ease;
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 6px 8px;
+  border-radius: var(--border-radius-sm);
+  color: var(--color-text);
 
-.site-header__logo:hover {
-  opacity: 0.8;
+  &:hover {
+    border-bottom: none;
+    background-color: var(--color-bg-secondary);
+    color: var(--color-secondary);
+  }
 }
 
 .site-header__nav {
@@ -97,15 +103,15 @@
   padding: 6px 8px;
   border-radius: var(--border-radius-sm);
   color: var(--color-text);
-}
 
-.site-header__link[aria-current] {
-  background-color: var(--color-bg-secondary);
-  color: var(--color-secondary);
-}
+  &:hover {
+    border-bottom: none;
+    background-color: var(--color-bg-secondary);
+    color: var(--color-secondary);
+  }
 
-.site-header__link:hover {
-  border-bottom: none;
-  background-color: var(--color-bg-secondary);
-  color: var(--color-secondary);
+  &[aria-current] {
+    background-color: var(--color-bg-secondary);
+    color: var(--color-secondary);
+  }
 }
