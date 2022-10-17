@@ -17,7 +17,9 @@ collections:
         name: "global"
         file: "src/_data/global.json"
         fields:
-          - { label: "SVG Logo", name: "logo_svg", widget: "image", required: true }
+          - { label: "Logo (.svg)", name: "logo", widget: "image", required: true }
+          - { label: "Mobile Menu Icon (.svg)", name: "menu_icon", widget: "image", required: true }
+          - { label: "Close Icon (.svg)", name: "close_icon", widget: "image", required: true }
 
   # Articles
   - name: "article" # Used in routes, e.g., /admin/collections/blog
