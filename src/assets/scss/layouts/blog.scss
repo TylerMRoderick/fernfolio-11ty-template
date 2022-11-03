@@ -1,8 +1,8 @@
 /* Article card */
 .article-card {
   margin-top: 20px;
-  padding: 4px;
-  border-radius: 6px;
+  padding: 4px 6px;
+  border-radius: var(--border-radius);
 
   &:hover {
     color: var(--color-text);
