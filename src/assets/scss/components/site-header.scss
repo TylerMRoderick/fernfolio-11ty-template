@@ -1,5 +1,8 @@
 .site-header {
+  position: fixed;
+  width: 100%;
   border-top: 3px solid var(--color-secondary);
+  z-index: var(--z-header);
 }
 
 .site-header__container {
@@ -7,12 +10,16 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  max-width: var(--site-width);
-  margin: 0 auto;
-  padding: 15px;
+  margin: 3px 12px 0;
+  padding: 8px 10px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  background-color: var(--color-bg);
+  box-shadow: var(--shadow);
 
   @media (min-width: 1024px) {
-    padding: 15px 40px 0;
+    max-width: var(--site-width);
+    margin: 3px auto 0;
   }
 }
 
@@ -25,11 +32,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   padding: 6px 8px;
   border-radius: var(--border-radius-sm);
   color: var(--color-text);
+
+  @media (min-width: 1024px) {
+    width: 40px;
+    height: 40px;
+  }
 
   &:hover {
     border-bottom: none;
@@ -63,7 +75,7 @@
   }
 
   svg {
-    width: 24px;
+    width: 20px;
     height: auto;
   }
 

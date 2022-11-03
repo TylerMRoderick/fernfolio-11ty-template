@@ -15,7 +15,7 @@
     display: block;
     position: absolute;
     left: auto;
-    top: 80px;
+    top: 95px;
     right: 0;
     bottom: auto;
     width: 100%;
@@ -52,6 +52,7 @@
 }
 
 .hero__image {
+  max-width: 300px;
   border-radius: var(--border-radius);
   transition: filter 0.4s ease-out;
 
