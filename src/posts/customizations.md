@@ -7,11 +7,10 @@ tags:
   - sport
 ---
 
-**How do I change colors and fonts?**
-These can be changed in the `variables.css` file.
+### How do I edit content?
+Once your site is deployed and configured, add `/admin` to the end of the url (not using localhost) and hit refresh. From there, you should be able to login and see see the content management dashboard. You should be able to change most content here (e.g. page text, images, logo, articles, projects, etc.).
 
-**What about the page content?**
-Page content is powered by markdown files and can be modified using Netlify CMS (or edited directly and pushed to github).
+### Further customizations
+If you want to take your customizations further, you will need to modify the project source code. Some customizations, like changing theme colors and fonts, are straightforward (those can be modified in the `variables.scss` file). Other customizations will require more in-depth solutions.
 
-**But how do I use the CMS?**
-Once your site is deployed and configured, add `/admin` to the end of the url (not using localhost). From there, you should be able to login and see all your pages ready for editing. You can also add a new page there. These updates immediately get pushed to the github repo where the appropriate markdown files are updated. In other words, all content is stored in git. The CMS is just an abstraction for editing those files without needing to manually commit changes.
+If you get stuck or just have a question, feel free to create a [Github issue](https://github.com/TylerMRoderick/fernfolio-11ty-template/issues) and I will try to point you in the right direction.
