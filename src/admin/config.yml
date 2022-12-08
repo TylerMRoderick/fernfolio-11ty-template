@@ -16,7 +16,7 @@ collections:
 
       # Site Metadata
       - label: "Metadata"
-        name: "global"
+        name: "metadata"
         file: "src/_data/metadata.json"
         fields:
           - { label: "Title", name: "title", widget: "string" }
