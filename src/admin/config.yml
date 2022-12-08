@@ -14,8 +14,8 @@ collections:
     slug: "{{slug}}"
     files:
 
-    # Site Metadata
-    - label: "Metadata"
+      # Site Metadata
+      - label: "Metadata"
         name: "global"
         file: "src/_data/metadata.json"
         fields:
