@@ -2,7 +2,7 @@ const { DateTime } = require('luxon');
 
 // Date formatting (human readable)
 function readableDateFilter (dateObj) {
-  return DateTime.fromJSDate(dateObj).toFormat('MMMM dd, yyyy');
+  return DateTime.fromJSDate(dateObj).toFormat('DDD');
 };
 
 // Date formatting (machine readable)
