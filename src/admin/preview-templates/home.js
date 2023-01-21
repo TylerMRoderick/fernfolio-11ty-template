@@ -72,7 +72,7 @@ const Home = createClass({
           <section>
             <article class="article-card">
               <a class="article-card__link" href="#">
-                <h6 class="article-card__title">Placeholder Article</h6>
+                <h5 class="article-card__title">Placeholder Article</h5>
                 <p class="article-card__summary">
                   This is not a real article and is only visible in the CMS.
                 </p>
@@ -80,7 +80,7 @@ const Home = createClass({
             </article>
             <article class="article-card">
               <a class="article-card__link" href="#">
-                <h6 class="article-card__title">Placeholder Article</h6>
+                <h5 class="article-card__title">Placeholder Article</h5>
                 <p class="article-card__summary">
                   This is not a real article and is only visible in the CMS.
                 </p>
