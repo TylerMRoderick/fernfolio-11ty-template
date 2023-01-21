@@ -16,7 +16,7 @@
           {% if article.data.tags and show_tags %}
             <p class="tag-list">
               {% for tag in article.data.tags %}
-                {%- if tag != "article" -%}
+                {%- if tag != "post" -%}
                   {% set tagUrl %}/tags/{{ tag }}/{% endset %}
                 <a class="tag" href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
                 {%- endif -%}
