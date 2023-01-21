@@ -1,5 +1,5 @@
 {
   "layout": "post.njk",
-  "permalink": "posts/{{ title | slug }}/index.html",
+  "permalink": "posts/{{ urlPath or title | slug }}/index.html",
   "tags": ["post"]
 }
