@@ -3,7 +3,7 @@
 # Fernfolio — An 11ty Portfolio Template
 Launch your personal portfolio in minutes and modify content without opening a code editor!
 
-<img width="1280" alt="fernfolio screenshot" src="https://raw.githubusercontent.com/TylerMRoderick/fernfolio-11ty-template/master/fernfolio-preview.png">
+<img width="1280" alt="fernfolio screenshot" src="https://raw.githubusercontent.com/TylerMRoderick/fernfolio-11ty-template/master/fernfolio-preview.jpeg">
 
 ### <pre>🖥  [Demo](https://fernfolio.netlify.app/)</pre>
 
