@@ -3,7 +3,7 @@
     <div class="project-grid">
       {% for project in projects %}
         <div class="project-card" {% if project.url == url %} data-current="current item"{% endif %}>
-          <h5>
+          <h4>
             <a class="project-card__title" href="{{ project.url | url }}">
               {% if project.data.title %}
                 <span class="project-card__emoji">{{ project.data.emoji }}</span>
@@ -14,7 +14,7 @@
                 Untitled
               {% endif %}
             </a>
-          </h5>
+          </h4>
           {% if project.data.summary %}
             <p>
               {{ project.data.summary }}

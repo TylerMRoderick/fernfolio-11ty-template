@@ -19,12 +19,12 @@ const Projects = createClass({
         <section>
           <div class="project-grid">
             <div class="project-card">
-              <h5>
+              <h4>
                 <a class="project-card__title" href="#">
                   <span class="project-card__emoji">👾</span>
                   Placeholder Project
                 </a>
-              </h5>
+              </h4>
               <p>This is not a real project and is only visible in the CMS.</p>
               <p class="tag-list">
                 <a class="project-card__tag tag" href="#" rel="tag">Javascript</a>
@@ -32,12 +32,12 @@ const Projects = createClass({
               </p>
             </div>
             <div class="project-card">
-              <h5>
+              <h4>
                 <a class="project-card__title" href="#">
                   <span class="project-card__emoji">👾</span>
                   Another Placeholder
                 </a>
-              </h5>
+              </h4>
               <p>This is the summary for the second placeholder project.</p>
               <p class="tag-list">
                 <a class="project-card__tag tag" href="#" rel="tag">Golang</a>
