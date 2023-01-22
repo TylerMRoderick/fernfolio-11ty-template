@@ -32,6 +32,7 @@
     "@11ty/eleventy": "^0.11.1",
     "@11ty/eleventy-img": "^2.0.1",
     "@11ty/eleventy-navigation": "^0.3.3",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
     "autoprefixer": "^10.4.8",
     "cross-env": "^7.0.3",
     "cssnano": "^5.1.12",

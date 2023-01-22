@@ -1,4 +1,5 @@
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
+const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const imageShortcode = require('./src/_11ty/shortcodes/image-shortcode');
 const markdownLibrary = require('./src/_11ty/libraries/markdown-library');
 const minifyHtml = require('./src/_11ty/utils/minify-html');
@@ -10,6 +11,7 @@ const { readableDateFilter, machineDateFilter } = require('./src/_11ty/filters/d
 module.exports = function (eleventyConfig) {
   // Plugins
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   // Filters
   eleventyConfig.addFilter('markdown', markdownFilter);
