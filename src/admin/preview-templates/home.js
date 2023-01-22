@@ -32,8 +32,10 @@ const Home = createClass({
           </div>
 
           <!-- Project List Placeholder (for illustrative purposes) -->
-          <hr/>
-          <h2>Projects</h2>
+          <div class="list-header">
+            <h2 class="list-header__title">Projects</h2>
+            <a class="btn btn--outline btn--sm" href="/projects">View All</a>
+          </div>
           <section>
             <div class="project-grid">
               <div class="project-card">
@@ -67,8 +69,10 @@ const Home = createClass({
 
 
           <!-- Article List Placeholder (for illustrative purposes) -->
-          <hr/>
-          <h2>Articles</h2>
+          <div class="list-header">
+            <h2 class="list-header__title">Articles</h2>
+            <a class="btn btn--outline btn--sm" href="/blog">View All</a>
+          </div>
           <section>
             <article class="article-card">
               <a class="article-card__link" href="#">
