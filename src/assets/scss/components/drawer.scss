@@ -18,7 +18,7 @@
 }
 
 .drawer__header {
-  padding: 1.5rem;
+  padding: 2.5rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -51,7 +51,7 @@
   bottom: 0;
   height: 100%;
   width: 100%;
-  max-width: 400px;
+  max-width: 340px;
   z-index: 9999;
   overflow: auto;
   transition: transform 0.3s;
@@ -99,6 +99,6 @@
   margin: 0;
   padding: 15px 0;
   border-bottom: 1px solid var(--color-border);
-  font-size: 17px;
-  font-weight: 500;
+  font-size: 1.75em;
+  font-weight: 700;
 }
