@@ -20,14 +20,6 @@ body {
   line-height: 1.618;
   color: var(--color-text);
   background-color: var(--color-bg);
-
-  @media (max-width: 684px) {
-    font-size: 1.53rem;
-  }
-
-  @media (max-width: 382px) {
-    font-size: 1.35rem;
-  }
 }
 
 main {
