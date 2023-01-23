@@ -68,3 +68,15 @@
   color: var(--color-text-alt);
   filter: brightness(90%);
 }
+
+.header-anchor {
+  float: left;
+  font-size: .85em;
+  padding-right: 0.23em;
+  margin-top: 0.125em;
+
+  @media (min-width: 1024px) {
+    margin-left: -0.87em;
+    opacity: 0;
+  }
+}
