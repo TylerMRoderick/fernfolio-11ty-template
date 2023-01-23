@@ -52,6 +52,7 @@ h6 {
 
   &:focus, &:hover {
     .header-anchor {
+      border-bottom: none;
       opacity: 1;
     }
   }
