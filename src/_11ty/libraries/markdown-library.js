@@ -1,5 +1,5 @@
 let markdownIt = require('markdown-it');
-let markdownItAnchor = require('markdown-it-anchor');
+let anchor = require('markdown-it-anchor');
 const Image = require('@11ty/eleventy-img');
 
 // Customize Markdown library and settings
@@ -7,7 +7,12 @@ let markdown = markdownIt({
   html: true,
   breaks: true,
   linkify: true
-}).use(markdownItAnchor, { permalink: false });
+}).use(anchor, {
+  permalink: anchor.permalink.linkInsideHeader({
+    symbol: '#',
+    placement: 'before'
+  })
+});
 
 
 // Add responsive image suppport to markdown files
