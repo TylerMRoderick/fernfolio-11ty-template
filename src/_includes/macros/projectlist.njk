@@ -5,7 +5,7 @@
         <div class="project-card" {% if project.url == url %} data-current="current item"{% endif %}>
           <h4>
             <a class="project-card__title" href="{{ project.url | url }}">
-              {% if project.data.title %}
+              {% if project.data.emoji %}
                 <span class="project-card__emoji">{{ project.data.emoji }}</span>
               {% endif %}
               {% if project.data.title %}
