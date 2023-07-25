@@ -99,6 +99,11 @@
   @media (min-width: 1024px) {
     display: none;
   }
+
+  .dark & {
+    color: var(--color-text-dark);
+    background-color: var(--color-bg-secondary-dark);
+  }
 }
 
 .site-header__mobile-nav-label {

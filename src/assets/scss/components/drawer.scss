@@ -23,6 +23,10 @@
   justify-content: flex-end;
   align-items: center;
   border-bottom: 1px solid var(--color-border);
+
+  .dark &{
+    border-bottom: 1px solid var(--color-border-dark);
+  }
 }
 
 .drawer__close {
@@ -41,6 +45,11 @@
 
   svg {
     width: 100%;
+  }
+
+  .dark &{
+    color: var(--color-text-dark);
+    background-color:transparent
   }
 }
 
@@ -61,6 +70,11 @@
   flex-direction: column;
   transform: translate3d(103%, 0, 0); /* extra 3% because of box-shadow */
   box-shadow: 0 2px 6px #777;
+
+  .dark &{
+    background-color: var(--color-bg-wrapper-bg-dark);
+    box-shadow: none;
+  }
 }
 
 .drawer__content {
@@ -101,4 +115,8 @@
   border-bottom: 1px solid var(--color-border);
   font-size: 1.75em;
   font-weight: 700;
+
+  .dark &{
+    border-bottom: 1px solid var(--color-border-dark);
+  }
 }
