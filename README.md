@@ -66,6 +66,14 @@ If you want to test things locally before deploying, follow the steps below:
 
 Use this as the "Publish command" if needed by hosting such as Netlify.
 
+## 💡 Dark mode
+
+To enable switching from light to dark mode, `global.json` has some settings:
+
+- `enable_theme_switch`: set to `true` if you want your visitors to be able to switch theme
+- `default_theme`: set to `dark` or another value (which always means `light`)
+- `use_system_theme`: set to `true` if you want the system preference to be enforced
+
 ## 🎩 Common issues
 
 If you change the repo that was created at deploy time from public to private, you'll need to regenerate your token,
