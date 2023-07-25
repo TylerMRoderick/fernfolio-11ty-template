@@ -3,7 +3,11 @@
 
 	{% include "partials/head.njk" %}
 
-	<body class="dark">
+	{% if global.enable_theme_switch %}
+		<body class="{% if global.default_theme == 'dark' %}dark{% endif %}" data-use-system-theme="{{ global.use_system_theme }}">
+	{% else %}
+		<body>
+	{% endif %}
 		<div class="wrapper-bg-wrapper"><div class="wrapper-bg"></div></div>
 
 		{% include "partials/site-header.njk" %}

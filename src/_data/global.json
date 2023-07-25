@@ -2,6 +2,8 @@
   "logo": "src/assets/img/icon-fern.svg",
   "menu_icon": "src/assets/img/icon-hamburger.svg",
   "close_icon": "src/assets/img/icon-close.svg",
-  "dark_icon": "src/assets/img/icon-lightbulb.svg",
-  "light_icon": "src/assets/img/icon-sun.svg"
+  "enable_theme_switch": true,
+  "switch_theme_icon": "src/assets/img/icon-lightbulb.svg",
+  "default_theme": "light",
+  "use_system_theme": true
 }

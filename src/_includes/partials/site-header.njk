@@ -28,6 +28,14 @@
             </a>
           </li>
         {%- endfor %}
+
+        {% if global.enable_theme_switch %}
+          <li class="site-header__item">
+            <a class="site-header__link switch-theme" id="switch-theme">
+              {{ global.switch_theme_icon | svg | safe }}
+            </a>
+          </li>
+        {% endif %}
       </ul>
     </nav>
   </div>
