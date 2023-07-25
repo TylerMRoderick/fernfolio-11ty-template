@@ -157,4 +157,8 @@
   .dark & {
     color: var(--color-title-dark);
   }
+
+  &.switch-theme {
+    cursor: pointer;
+  }
 }
