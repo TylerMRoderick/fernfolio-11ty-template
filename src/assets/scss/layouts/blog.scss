@@ -7,11 +7,19 @@
   &:hover {
     color: var(--color-text);
     background-color: var(--color-bg-hover);
+
+    .dark & {
+      background-color: var(--color-bg-secondary-dark);
+    }
   }
 
   &--tags {
     border-bottom: 2px solid var(--color-border);
     border-radius: 0;
+
+    .dark & {
+      border-bottom: 2px solid var(--color-border-dark);
+    }
 
     &:last-child {
       border-bottom: none;
@@ -19,6 +27,10 @@
 
     &:hover {
       background-color: transparent;
+
+      .dark & {
+        background-color: transparent;
+      }
     }
   }
 }
@@ -44,6 +56,10 @@
 .article-card__summary {
   margin-bottom: 0;
   color: var(--color-text-gray);
+
+  .dark & {
+    color: var(--color-text-dark);
+  }
 }
 
 /* Tags */
@@ -93,6 +109,11 @@
 
   &:first-child {
     margin-left: 0;
+  }
+
+  .dark & {
+    background-color: var(--color-bg-secondary-dark);
+    color: var(--color-link-dark);
   }
 }
 

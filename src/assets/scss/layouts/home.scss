@@ -26,6 +26,10 @@
     border-radius: var(--border-radius);
     background-color: var(--color-bg-accent);
     z-index: -1;
+
+    .dark & {
+      background-color: var(--color-bg-accent-dark);
+    }
   }
 }
 
@@ -85,6 +89,10 @@
   margin-bottom: 20px;
   padding-top: 20px;
   border-top: 2px solid (var(--color-border));
+
+  .dark & {
+    border-top: 1px solid (var(--color-border-dark));
+  }
 }
 
 .list-header__title {

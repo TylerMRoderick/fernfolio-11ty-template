@@ -3,10 +3,11 @@
 
 	{% include "partials/head.njk" %}
 
-	<body>
+	<body class="dark">
+		<div class="wrapper-bg-wrapper"><div class="wrapper-bg"></div></div>
+
 		{% include "partials/site-header.njk" %}
 		{% include "partials/drawer.njk" %}
-
 		<main>
 			{{ layoutContent | safe }}
 		</main>
