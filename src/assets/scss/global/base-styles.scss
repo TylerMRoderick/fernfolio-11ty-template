@@ -20,6 +20,31 @@ body {
   line-height: 1.618;
   color: var(--color-text);
   background-color: var(--color-bg);
+
+  &.dark{
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-dark);
+  }
+}
+
+.wrapper-bg-wrapper {
+  display:none;
+
+  .dark & {
+    display:flex;
+    position:fixed;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    justify-content: center;
+
+    .wrapper-bg{
+      width:calc(var(--site-width) + 100px);
+      background-color: var(--color-bg-wrapper-bg-dark);
+      border-right: 1px solid var(--color-bg-secondary-dark);
+      border-left: 1px solid var(--color-bg-secondary-dark);
+    }
+  }
 }
 
 main {
@@ -55,6 +80,10 @@ h6 {
       border-bottom: none;
       opacity: 1;
     }
+  }
+
+  .dark & {
+    color: var(--color-title-dark);
   }
 }
 
@@ -101,9 +130,18 @@ a {
   text-decoration: none;
   color: var(--color-secondary);
 
+  .dark & {
+    color: var(--color-link-dark);
+  }
+
   &:hover {
     color: var(--color-secondary);
     border-bottom: 2px solid var(--color-secondary);
+
+    .dark & {
+      color: var(--color-link-dark);
+      border-color: var(--color-link-dark);
+    }
   }
 }
 
@@ -158,6 +196,10 @@ pre {
   overflow-x: auto;
   margin-top: 0;
   margin-bottom: 2.5rem;
+
+  .dark & {
+    background-color: var(--color-bg-secondary-dark);
+  }
 }
 
 code {
@@ -165,6 +207,10 @@ code {
   padding: 0 0.5em;
   background-color: var(--color-bg-secondary);
   white-space: pre-wrap;
+
+  .dark & {
+    background-color: var(--color-bg-secondary-dark);
+  }
 }
 
 pre > code {
@@ -218,6 +264,11 @@ input[type='button'] {
   border-radius: 1px;
   cursor: pointer;
   box-sizing: border-box;
+
+  .dark & {
+    color: var(--color-title-dark);
+    background-color: var(--color-link-dark);
+  }
 }
 
 .btn[disabled],
@@ -255,10 +306,17 @@ input {
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box;
+  font-family: var(--font-family-base);
 
   &:focus {
     border: 1px solid var(--color-primary);
     outline: 0;
+  }
+
+  .dark & {
+    background-color: var(--color-bg-secondary-dark);
+    border: 1px solid var(--color-bg-secondary-dark);
+    color: var(--color-text-dark);
   }
 }
 
@@ -272,4 +330,8 @@ fieldset {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: 600;
+
+  .dark & {
+    color: var(--color-title-dark);
+  }
 }

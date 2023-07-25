@@ -19,19 +19,41 @@
   border-radius: var(--border-radius);
   background-color: var(--color-bg);
   box-shadow: var(--shadow);
+
+  .dark & {
+    background-color: var(--color-bg-secondary-dark);
+  }
 }
 
 .project-card__title {
   color: var(--color-text);
+
+  .dark & {
+    color: var(--color-title-dark);
+
+    &:hover {
+      color: var(--color-link-dark);
+      border-color: var(--color-link-dark);
+    }
+  }
 }
 
 .project-card__tag {
   background-color: var(--color-secondary);
   color: var(--color-text-alt);
 
+  .dark & {
+    background-color: var(--color-secondary-dark);
+    color: var(--color-text-alt);
+  }
+
   &:hover {
     color: var(--color-text-alt);
     filter: brightness(90%);
+
+    .dark & {
+      color: var(--color-text-alt);
+    }
   }
 }
 
