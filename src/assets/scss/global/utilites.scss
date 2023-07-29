@@ -73,6 +73,7 @@
   color: var(--color-text-alt);
 
   .dark & {
+    background-color: var(--color-danger);
     color: var(--color-text-alt);
   }
 }
