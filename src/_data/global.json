@@ -5,5 +5,5 @@
   "enable_theme_switch": true,
   "switch_theme_icon": "src/assets/img/icon-lightbulb.svg",
   "default_theme": "light",
-  "use_system_theme": true
+  "use_system_theme": false
 }
