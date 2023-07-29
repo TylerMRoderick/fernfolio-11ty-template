@@ -28,6 +28,7 @@ collections:
         file: "src/_data/global.json"
         fields:
           - { label: "Enable Theme switch", name: "enable_theme_switch", widget: "boolean", required: true }
+          - { label: "Switch Theme Icon (.svg)", name: "switch_theme_icon", widget: "image", required: true }
           - { label: "Use System Theme", name: "use_system_theme", widget: "boolean", required: true }
           - {
               label: "Default Theme",
@@ -37,8 +38,6 @@ collections:
               default: "light",
               required: true
             }
-          - { label: "Dark Mode Icon (.svg)", name: "dark_icon", widget: "image", required: true }
-          - { label: "Light Mode Icon (.svg)", name: "light_icon", widget: "image", required: true }
           - { label: "Logo (.svg)", name: "logo", widget: "image", required: true }
           - { label: "Mobile Menu Icon (.svg)", name: "menu_icon", widget: "image", required: true }
           - { label: "Close Icon (.svg)", name: "close_icon", widget: "image", required: true }
