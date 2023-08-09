@@ -3,7 +3,7 @@
   "menu_icon": "src/assets/img/icon-hamburger.svg",
   "close_icon": "src/assets/img/icon-close.svg",
   "enable_theme_switch": true,
-  "switch_theme_icon": "/src/assets/img/icon-lightbulb.svg",
+  "switch_theme_icon": "src/assets/img/icon-lightbulb.svg",
   "default_theme": "light",
   "use_system_theme": false
 }
