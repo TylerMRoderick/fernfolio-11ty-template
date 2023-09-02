@@ -1,14 +1,18 @@
 <!doctype html>
-<html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
+<html
+  {% if global.enable_theme_switch %}data-enable-theme-switch="{{ global.enable_theme_switch }}"{% endif %}
+  {% if global.enable_theme_switch %}data-use-system-theme="{{ global.use_system_theme }}"{% endif %}
+  {% if global.default_theme %}data-default-theme="{{ global.default_theme }}"{% endif %}
+  {% if section %}data-current="{{ section }}"{% endif %}
+  lang="en"
+>
 
 	{% include "partials/head.njk" %}
 
-	{% if global.enable_theme_switch %}
-		<body class="{% if global.default_theme == 'dark' %}dark{% endif %}" data-use-system-theme="{{ global.use_system_theme }}">
-	{% else %}
-		<body>
-	{% endif %}
-		<div class="wrapper-bg-wrapper"><div class="wrapper-bg"></div></div>
+  <body>
+		<div class="wrapper-bg-wrapper">
+      <div class="wrapper-bg"></div>
+    </div>
 
 		{% include "partials/site-header.njk" %}
 		{% include "partials/drawer.njk" %}

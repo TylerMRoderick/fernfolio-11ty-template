@@ -8,7 +8,7 @@
     color: var(--color-text);
     background-color: var(--color-bg-hover);
 
-    .dark & {
+    :root[data-theme="dark"] & {
       background-color: var(--color-bg-secondary-dark);
     }
   }
@@ -17,7 +17,7 @@
     border-bottom: 2px solid var(--color-border);
     border-radius: 0;
 
-    .dark & {
+    :root[data-theme="dark"] & {
       border-bottom: 2px solid var(--color-border-dark);
     }
 
@@ -28,7 +28,7 @@
     &:hover {
       background-color: transparent;
 
-      .dark & {
+      :root[data-theme="dark"] & {
         background-color: transparent;
       }
     }
@@ -57,7 +57,7 @@
   margin-bottom: 0;
   color: var(--color-text-gray);
 
-  .dark & {
+  :root[data-theme="dark"] & {
     color: var(--color-text-dark);
   }
 }
@@ -111,7 +111,7 @@
     margin-left: 0;
   }
 
-  .dark & {
+  :root[data-theme="dark"] & {
     background-color: var(--color-bg-secondary-dark);
     color: var(--color-link-dark);
   }

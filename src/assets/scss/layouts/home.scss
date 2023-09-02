@@ -27,7 +27,7 @@
     background-color: var(--color-bg-accent);
     z-index: -1;
 
-    .dark & {
+    :root[data-theme="dark"] & {
       background-color: var(--color-bg-accent-dark);
     }
   }
@@ -90,7 +90,7 @@
   padding-top: 20px;
   border-top: 2px solid (var(--color-border));
 
-  .dark & {
+  :root[data-theme="dark"] & {
     border-top: 1px solid (var(--color-border-dark));
   }
 }

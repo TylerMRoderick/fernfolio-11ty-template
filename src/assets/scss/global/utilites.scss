@@ -48,7 +48,7 @@
   background-color: var(--color-bg);
   color: var(--color-text);
 
-  .dark & {
+  :root[data-theme="dark"] & {
     border-color: var(--color-bg-secondary-dark);
     background-color: var(--color-bg-secondary-dark);
     color: var(--color-text-dark);
@@ -60,7 +60,7 @@
     background-color: var(--color-bg);
     color: var(--color-secondary);
 
-    .dark & {
+    :root[data-theme="dark"] & {
       border: 1px solid var(--color-bg-secondary-dark);
       background-color: var(--color-bg-wrapper-bg-dark);
       color: var(--color-title-dark);
@@ -72,7 +72,7 @@
   background-color: var(--color-danger);
   color: var(--color-text-alt);
 
-  .dark & {
+  :root[data-theme="dark"] & {
     background-color: var(--color-danger);
     color: var(--color-text-alt);
   }
@@ -85,7 +85,7 @@
   color: var(--color-text-alt);
   filter: brightness(90%);
 
-  .dark & {
+  :root[data-theme="dark"] & {
     color: var(--color-text-alt);
   }
 }

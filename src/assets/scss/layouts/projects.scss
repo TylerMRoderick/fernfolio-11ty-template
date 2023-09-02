@@ -20,7 +20,7 @@
   background-color: var(--color-bg);
   box-shadow: var(--shadow);
 
-  .dark & {
+  :root[data-theme="dark"] & {
     background-color: var(--color-bg-secondary-dark);
   }
 }
@@ -28,7 +28,7 @@
 .project-card__title {
   color: var(--color-text);
 
-  .dark & {
+  :root[data-theme="dark"] & {
     color: var(--color-title-dark);
 
     &:hover {
@@ -42,7 +42,7 @@
   background-color: var(--color-secondary);
   color: var(--color-text-alt);
 
-  .dark & {
+  :root[data-theme="dark"] & {
     background-color: var(--color-secondary-dark);
     color: var(--color-text-alt);
   }
@@ -51,7 +51,7 @@
     color: var(--color-text-alt);
     filter: brightness(90%);
 
-    .dark & {
+    :root[data-theme="dark"] & {
       color: var(--color-text-alt);
     }
   }

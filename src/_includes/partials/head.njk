@@ -22,5 +22,21 @@
   <link rel="stylesheet" href="/assets/css/main.css">
 
   {# Javascript #}
-  <script async src="/assets/js/main.bundle.js"></script>
+  <script>
+    // Initialize theme
+    // Must run before page rendering to prevent flash
+    const themeConfig = document.documentElement.dataset;
+    const theme = localStorage.getItem('theme');
+
+    if (theme) {
+      themeConfig.theme = theme;
+    } else {
+      const defaultTheme = themeConfig.defaultTheme;
+      const useSystemTheme = themeConfig.useSystemTheme === 'true';
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+      themeConfig.theme = (useSystemTheme && prefersDark) ? 'dark' : defaultTheme;
+    }
+  </script>
+  <script defer src="/assets/js/main.bundle.js"></script>
 </head>
