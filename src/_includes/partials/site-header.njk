@@ -31,9 +31,9 @@
 
         {% if global.enable_theme_switch %}
           <li class="site-header__item">
-            <a class="site-header__link switch-theme" id="switch-theme">
+            <button class="site-header__link site-header__link--theme-switch" data-theme-switch>
               {{ global.switch_theme_icon | svg | safe }}
-            </a>
+            </button>
           </li>
         {% endif %}
       </ul>

@@ -1,7 +1,7 @@
 const darkMode = () => {
   // Selectors
   const selectors = {
-    toggleButton: '#switch-theme',
+    toggleButton: '[data-theme-switch]',
   }
 
   // Toggle theme

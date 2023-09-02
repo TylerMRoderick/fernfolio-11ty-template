@@ -163,7 +163,12 @@
     color: var(--color-title-dark);
   }
 
-  &.switch-theme {
-    cursor: pointer;
+  &--theme-switch {
+    border: none;
+    background: none;
+
+    :root[data-theme="dark"] & {
+      background: none;
+    }
   }
 }
