@@ -1,11 +1,14 @@
-const Image = require('@11ty/eleventy-img');
+const Image = require("@11ty/eleventy-img");
 
-async function imageShortcode (src, alt, sizes, classes, loading = 'lazy') {
+async function imageShortcode(src, alt, sizes, classes, loading = "lazy") {
+  // Remove leading slash if it exists
+  src = src.startsWith("/") ? src.slice(1) : src;
+
   let metadata = await Image(src, {
     widths: [25, 320, 640, 960, 1200, 1800, 2400],
-    formats: ['webp', 'jpeg'],
-    urlPath: '/assets/img/',
-    outputDir: '_site/assets/img/',
+    formats: ["webp", "jpeg"],
+    urlPath: "/assets/img/",
+    outputDir: "_site/assets/img/",
   });
 
   let imageAttributes = {
@@ -13,7 +16,7 @@ async function imageShortcode (src, alt, sizes, classes, loading = 'lazy') {
     alt,
     sizes,
     loading,
-    decoding: 'async',
+    decoding: "async",
   };
 
   return Image.generateHTML(metadata, imageAttributes);
