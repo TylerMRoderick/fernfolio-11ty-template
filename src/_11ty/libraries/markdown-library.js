@@ -19,7 +19,10 @@ let markdown = markdownIt({
 // borrowed from: https://tomichen.com/blog/posts/20220416-responsive-images-in-markdown-with-eleventy-image
 markdown.renderer.rules.image = function (tokens, idx) {
   const token = tokens[idx];
-  let imgSrc = `.${token.attrGet('src')}`;
+  const isRemoteImage = token.attrGet('src').startsWith('http');
+  const imgSrc = isRemoteImage
+    ? token.attrGet('src')
+    : `.${token.attrGet('src')}`;
   const imgAlt = token.content;
   const imgTitle = token.attrGet('title');
   const htmlOpts = { alt: imgAlt, loading: 'lazy', decoding: 'async' };
@@ -28,7 +31,7 @@ markdown.renderer.rules.image = function (tokens, idx) {
   ).groups;
 
   // handle skipped and remote images
-  if (parsed.skip || imgSrc.startsWith('http')) {
+  if (parsed.skip || isRemoteImage) {
     const options = { ...htmlOpts };
     const metadata = { jpeg: [{ url: imgSrc }] };
 
